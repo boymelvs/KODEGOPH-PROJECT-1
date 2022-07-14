@@ -10,8 +10,8 @@
       <link rel="stylesheet" href="./styles/destination.css" />
    </head>
    <body>
-      <div id="home" class="contact_container">
-         <header class="contact_header">
+      <div id="home" class="about_container">
+         <header class="about_header">
             <nav class="nav_bar">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
 
@@ -33,8 +33,8 @@
                         <li class="menu_item" id="tour_packages">
                            <a href="./destination.html"> Tour Packages </a>
                         </li>
-                        <li class="menu_item" id="about_us">
-                           <a href="./about.html"> About Us </a>
+                        <li class="menu_item" id="contact_us">
+                           <a href="./contact.html"> Contact Us </a>
                         </li>
                      </ul>
                   </div>
@@ -50,77 +50,98 @@
             </nav>
          </header>
 
-         <main class="main_contact">
-            <section id="contact" class="contact">
-               <h2 class="contact_title">CONTACT US</h2>
-               <div class="address_container">
-                  <div class="address">
-                     <div class="full_address">
-                        <strong> Address: </strong>
-                        <p>Morondo St</p>
-                        <p>Brgy Cabaducan East</p>
-                        <p>Nampicuan, Nueva Ecija 3116</p>
+         <main class="main_about">
+            <section class="about_company">
+               <div class="my_company">
+                  <div class="history">
+                     <h2>About Us</h2>
+                     <p class="company_history_text">
+                        Bluejays Travel and Tours is newly established local tour providers in Cavinti, Laguna. It was founded on August 1, 2017 as start-up travel and tour agency
+                        with add-on travel-related assistance services. And one of affiliates member of Sarap Mag Biyahe (SMB) Travel and Tours. Bluejays is a group of friends
+                        (barkadahan) name in town of Cavinti were the founder is member. He just borrowed the name and used as his business name. The founder loves to travel and
+                        explore unfamiliar territories. Appreciated natural wonders of nature as well as the unique delicacies and cultures of every place he visited. These are the
+                        reasons why Bluejays Travel and Tours came into Tourism Market to share the uniqueness, amazing features and explore more attractions outside and inside of
+                        the Philippines.
+                     </p>
+                  </div>
+
+                  <div class="accreditation_logo">
+                     <h2>Accreditations & Membership</h2>
+                     <div class="member_logo">
+                        <img src="./images/accreditation/about_dot.jpg" alt="DOT" />
+                        <img src="./images/accreditation/about_iata.jpg" alt="IATA" />
+                        <img src="./images/accreditation/about_ptaa.jpg" alt="PTAA" />
+                        <img src="./images/accreditation/about_aussie.jpg" alt="AUSSIE" />
+                        <img src="./images/accreditation/about_hkspecialist.jpg" alt="HKSPECIALIST" />
+                        <img src="./images/accreditation/about_macauspecialist.jpg" alt="MACUASPECIALIST" />
+                        <img src="./images/accreditation/about_nzspecialist.jpg" alt="NZSPECIALIST" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="company_services">
+                  <h2 class="ourservices">Our Services</h2>
+                  <div class="offerservices">
+                     <div class="services_items">
+                        <div class="services_items_img ticketing_img">
+                           <img src="./images/airplane.svg" alt="Plane" />
+                        </div>
+
+                        <div class="services_title airline_ticketing">
+                           <h3>AIRLINE TICKETING</h3>
+                           <p>We can book your flight to anywhere in the world</p>
+                        </div>
                      </div>
 
-                     <div class="contact_info">
-                        <div class="phone">
-                           <img src="./images/icon-phone.svg" alt="Phone" />
-                           <p>+6312345678</p>
+                     <div class="services_items">
+                        <div class="services_items_img tourpackages_img">
+                           <img src="./images/briefcase.svg" alt="Briefcase" />
                         </div>
-                        <div class="email">
-                           <img src="./images/icon-email.svg" alt="Email" />
-                           <p>email@email.com</p>
+
+                        <div class="services_title tourpackages">
+                           <h3>TOUR PACKAGES</h3>
+                           <p>We offer tour packages to anywhere in the world</p>
+                        </div>
+                     </div>
+
+                     <div class="services_items">
+                        <div class="services_items_img hotelbooking_img">
+                           <img src="./images/bed.png" alt="Bed" />
+                        </div>
+
+                        <div class="services_title hotelbooking">
+                           <h3>HOTEL BOOKING</h3>
+                           <p>We can book your holiday to your favorite hotel</p>
+                        </div>
+                     </div>
+
+                     <div class="services_items">
+                        <div class="services_items_img visapassport_img">
+                           <img src="./images/file-earmark.svg" alt="Visa" />
+                        </div>
+
+                        <div class="services_title visapassport">
+                           <h3>VISA CONSULTATION</h3>
+                           <p>We will assist you with the visa formalities, documentation, submission of application</p>
                         </div>
                      </div>
                   </div>
-
-                  <form action="" class="form_contact">
-                     <p class="form_title">For inquiries, fillup the form below:</p>
-                     <div class="name_container">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" class="name" aria-label="name" />
-                     </div>
-
-                     <div class="email_container">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="email" aria-label="email" />
-                     </div>
-
-                     <div class="phone_container">
-                        <label for="phone">Phone</label>
-                        <input type="text" name="phone" id="phone" class="phone" aria-label="phone" />
-                     </div>
-
-                     <div class="subject_container">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" class="subject" />
-                     </div>
-
-                     <div class="message">
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                     </div>
-
-                     <div class="submit_btn_container">
-                        <input type="submit" name="submit_btn" id="submit_btn" class="submit_btn" aria-label="submit_btn" />
-                     </div>
-                  </form>
                </div>
 
-               <div class="maps">
-                  <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.155236279639!2d120.63988165787033!3d15.734706578974443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7149f07e07f7def1!2zMTXCsDQ0JzA0LjkiTiAxMjDCsDM4JzI3LjUiRQ!5e0!3m2!1sen!2sph!4v1657756967228!5m2!1sen!2sph"
-                     width="600"
-                     height="450"
-                     style="border: 0"
-                     allowfullscreen=""
-                     loading="lazy"
-                     referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+               <div class="accept_payment">
+                  <h2 class="payment">WE ACCEPT</h2>
+                  <div class="payment_container">
+                     <div class="payment_logo">
+                        <img src="./images/mode-payment/about_jcb.jpg" alt="JCB" />
+                        <img src="./images/mode-payment/about_mastercard.jpg" alt="MASTERCARD" />
+                        <img src="./images/mode-payment/about_paypal.jpg" alt="PAYPAL" />
+                        <img src="./images/mode-payment/about_visa.jpg" alt="VISA" />
+                     </div>
+                  </div>
                </div>
             </section>
 
-            <section id="likes" class="tour_suggestions">
+            <section class="tour_suggestions about_tour_suggestions">
                <div class="tour_suggestions_container">
                   <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
 
@@ -246,8 +267,8 @@
                <li class="footer_menu_item" id="tour_packages">
                   <a href="./destination.html"> Tour Packages </a>
                </li>
-               <li class="footer_menu_item" id="about_us">
-                  <a href="./about.html"> About Us </a>
+               <li class="footer_menu_item" id="contact_us">
+                  <a href="./contact.html"> Contact Us </a>
                </li>
             </ul>
 
