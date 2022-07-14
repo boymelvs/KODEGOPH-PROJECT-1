@@ -30,9 +30,7 @@
                         <li class="menu_item" id="special_offer">
                            <a href="#offers"> Special Offer </a>
                         </li>
-                        <li class="menu_item" id="tour_packages">
-                           <a href="#tours"> Tour Packages </a>
-                        </li>
+
                         <li class="menu_item" id="contact_us">
                            <a href="./contact.html"> Contact Us </a>
                         </li>
@@ -53,13 +51,13 @@
             </nav>
          </header>
 
-         <main>
-            <section class="main_content">
+         <main class="main_destination">
+            <section>
                <h1 class="tour_title">BORACAY <span>TOUR PACKAGES</span></h1>
 
                <div class="detail_container">
                   <div class="img_container">
-                     <img src="./images/tours/boracay.jpg" alt="Boracay" />
+                     <img src="./images/tours/EL-NIDO.jpg" alt="Boracay" />
                   </div>
 
                   <div class="tabs_container">
@@ -78,34 +76,62 @@
                      <div class="tab rates">
                         <div class="tab_content hotel lacarmela">
                            <h3 class="hotel_name">HOTEL NAME 1</h3>
-                           <div class="hotel_room">
+
+                           <div class="hotel_room_image">
                               <img src="./images/hotel/lacarmela-standard-room.png" alt="La Carmela" />
                            </div>
 
                            <div class="travel_dates">
                               <p><strong> Valid: </strong> Until Dec. 15, 2022</p>
-                              <p><strong> Quad/Triple/Double: </strong> Php 3,800</p>
+                              <p><strong> Quad: </strong> Php 3,800</p>
+                              <p><strong> Triple: </strong> Php 3,800</p>
+                              <p><strong> Double: </strong> Php 3,800</p>
                               <p><strong> Extra Night: </strong> Php 1,525</p>
                            </div>
 
-                           <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                           <a href="./contact.html" class="inquire_btn_container">
+                              <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                           </a>
                         </div>
 
                         <div class="tab_content hotel boracay_haven_suites">
                            <h3 class="hotel_name">HOTEL NAME 2</h3>
-                           <div class="hotel_room">
+                           <div class="hotel_room_image">
                               <img src="./images/hotel/BorcayHavenSuites_DeLuxe.webp" alt="Boracay Haven Suites" />
                            </div>
 
                            <div class="travel_dates">
                               <p><strong> Valid: </strong> Until March 2023</p>
 
+                              <p><strong> Quad: </strong> Php 4,450</p>
                               <p><strong> Triple: </strong> Php 4,450</p>
                               <p><strong> Double: </strong> Php 4,750</p>
                               <p><strong> Extra Night: </strong> Php 2,050</p>
                            </div>
 
-                           <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                           <a href="./contact.html" class="inquire_btn_container">
+                              <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                           </a>
+                        </div>
+
+                        <div class="tab_content hotel boracay_haven_suites">
+                           <h3 class="hotel_name">HOTEL NAME 3</h3>
+                           <div class="hotel_room_image">
+                              <img src="./images/hotel/BorcayHavenSuites_DeLuxe.webp" alt="Boracay Haven Suites" />
+                           </div>
+
+                           <div class="travel_dates">
+                              <p><strong> Valid: </strong> Until March 2023</p>
+
+                              <p><strong> Quad: </strong> Php 4,450</p>
+                              <p><strong> Triple: </strong> Php 4,450</p>
+                              <p><strong> Double: </strong> Php 4,750</p>
+                              <p><strong> Extra Night: </strong> Php 2,050</p>
+                           </div>
+
+                           <a href="./contact.html" class="inquire_btn_container">
+                              <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                           </a>
                         </div>
                      </div>
 
@@ -148,8 +174,146 @@
                   </div>
                </div>
             </section>
+
+            <section id="likes" class="tour_suggestions">
+               <div class="tour_suggestions_container">
+                  <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
+
+                  <div class="card_suggest_container">
+                     <!-- /* puerto princesa */ -->
+                     <div class="card_suggest puerto_princesa">
+                        <div class="card_suggest_image_container">
+                           <img src="./images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_suggest_img puerto_princesa_img" />
+
+                           <div class="card_suggest_price">Php 3,100</div>
+
+                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_suggest_description">
+                           <h2 class="card_suggest_title">PUERTO PRINCESA</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* coron */ -->
+                     <div class="card_suggest coron">
+                        <div class="card_suggest_image_container">
+                           <img src="./images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_suggest_img coron_img" />
+
+                           <div class="card_suggest_price">Php 3,200</div>
+
+                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_suggest_description">
+                           <h2 class="card_suggest_title">CORON</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* el nido */ -->
+                     <div class="card_suggest elnido">
+                        <div class="card_suggest_image_container">
+                           <img src="./images/tours/EL-NIDO.jpg" alt="El Nido" class="card_suggest_img elnido_img" />
+
+                           <div class="card_suggest_price">Php 3,150</div>
+
+                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_suggest_description">
+                           <h2 class="card_suggest_title">EL NIDO</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* baguio */ -->
+                     <div class="card_suggest baguio">
+                        <div class="card_suggest_image_container">
+                           <img src="./images/tours/BAGUIO.jpg" alt="Baguio" class="card_suggest_img baguio_img" />
+
+                           <div class="card_suggest_price">Php 3,600</div>
+
+                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_suggest_description">
+                           <h2 class="card_suggest_title">BAGUIO</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </main>
-         <footer></footer>
+
+         <footer>
+            <div class="footer_content_container">
+               <div class="contacts_media_container">
+                  <div class="footer_para_text_container">
+                     <div class="footer_logo_container">
+                        <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
+                     </div>
+
+                     <p class="footer_para_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                  </div>
+
+                  <ul class="social_media_container">
+                     <li>
+                        <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                     </li>
+                     <li>
+                        <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
+                     </li>
+
+                     <li>
+                        <img src="./images/twitter.svg" alt="Twitter" class="icon icon_twitter" />
+                     </li>
+
+                     <li>
+                        <img src="./images/youtube.svg" alt="Youtube" class="icon icon_youtube" />
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="newsletter_container">
+                  <div class="newsletter_title">
+                     <h2 class="newsletter_text">Newsletter</h2>
+
+                     <p class="newsletter_para_text">
+                        To recieve updates on your favorite destination, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
+                     </p>
+                  </div>
+
+                  <form class="subscribe_btn_container">
+                     <input type="email" class="subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
+                     <div class="warning">Check your email please..</div>
+
+                     <input type="submit" class="subscribe_btn" id="subscribe_btn" value="Subscribe" aria-label="Subscribe Button" />
+                  </form>
+               </div>
+            </div>
+
+            <ul class="footer_menu_container">
+               <li class="footer_menu_item" id="home">
+                  <a href="#home"> Home </a>
+               </li>
+               <li class="footer_menu_item" id="special_offer">
+                  <a href="#offers"> Special Offer </a>
+               </li>
+               <li class="footer_menu_item" id="tour_packages">
+                  <a href="#tours"> Tour Packages </a>
+               </li>
+               <li class="footer_menu_item" id="contact_us">
+                  <a href="#contact"> Contact Us </a>
+               </li>
+               <li class="footer_menu_item" id="about_us">
+                  <a href="#about"> About Us </a>
+               </li>
+            </ul>
+
+            <div class="attribution">
+               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. Coded by
+               <a href="https://github.com/boymelvs" target="_blank" rel="noreferrer noopener">boymelvs</a>.
+            </div>
+         </footer>
       </div>
    </body>
 </html>

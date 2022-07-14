@@ -1,11 +1,22 @@
-.destination_container {
+.destination_container,
+.contact_container {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 6rem;
+   gap: 10rem;
    min-width: 32rem;
    min-height: 100vh;
+}
+
+.main_contact,
+.main_destination {
+   display: flex;
+   flex-direction: column;
+   gap: 10rem;
+   max-width: 144rem;
+   width: 100%;
+   padding: 2rem;
 }
 
 .header {
@@ -13,30 +24,36 @@
    min-height: unset;
 }
 
-.main_content {
+.destination_content {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    gap: 1rem;
    padding: 2rem;
+   width: 100%;
+}
+
+.tour_title {
+   text-align: center;
 }
 
 .detail_container {
    display: flex;
    flex-direction: column;
    gap: 2rem;
-   width: 100%;
 }
 
 .img_container {
    width: 100%;
    height: 30rem;
+   border-radius: 0.5rem;
 }
 
 .detail_container img {
    width: 100%;
    height: 100%;
+   border-radius: 0.5rem;
 }
 
 .tabs_container {
@@ -68,9 +85,11 @@
    display: none;
    flex-direction: column;
    gap: 2rem;
+   border-radius: 0.5rem;
    border-top: 0.1rem solid var(--gray);
    background: var(--white);
    padding: 1rem;
+   width: 100%;
 }
 
 #rates:checked ~ .rates,
@@ -78,6 +97,7 @@
 #optional:checked ~ .optional,
 #itinerary:checked ~ .itinerary {
    display: flex;
+   width: 100%;
 }
 
 .tabs_container input:checked + label {
@@ -91,11 +111,23 @@
    flex-direction: column;
    gap: 1.5rem;
    padding: 2rem;
+   width: 100%;
 }
 
 .hotel {
-   padding: 2rem;
+   border-radius: 0.5rem;
    border: 0.1rem solid var(--light-gray);
+}
+
+.hotel_room_image {
+   width: 100%;
+   border-radius: 0.5rem;
+}
+
+.hotel_room_image img {
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem;
 }
 
 #inquire_btn {
@@ -105,9 +137,128 @@
    border-radius: 0.5rem;
    background: var(--outrageous-orange);
    font-weight: var(--font-weight-600);
+   width: 100%;
 }
 
 #inquire_btn:hover {
    background: var(--buttercup);
    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+   .img_container {
+      width: 50%;
+      min-height: 50vh;
+      place-items: center;
+      margin: 0 auto;
+   }
+
+   .detail_container img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .rates {
+      flex-direction: row;
+   }
+
+   .hotel_room_image {
+      height: 25rem;
+   }
+}
+
+@media (min-width: 1024px) {
+   .destination_content {
+      padding: 4rem 8rem;
+   }
+}
+
+/*================= END OF DESTINATION CONTAINER =================*/
+.tour_suggestions {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.card_suggest_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+   width: 100%;
+}
+
+.card_suggest {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   border-radius: 0.5rem;
+   background: var(--white);
+   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+   text-align: center;
+}
+
+.card_suggest_image_container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 20rem;
+
+   position: relative;
+   overflow: hidden;
+   border-radius: 0.5rem 0.5rem 0 0;
+   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.card_suggest_image_container img {
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem 0.5rem 0 0;
+   transition: all 1.5s ease;
+}
+
+.card_suggest_image_container:hover .card_suggest_img {
+   transform: scale(1.5);
+   cursor: pointer;
+}
+
+.card_suggest_price {
+   color: var(--white);
+   font-weight: var(--font-weight-600);
+   border-radius: 1rem;
+   padding: 1rem;
+   background: var(--almost-black-nav-bg);
+
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+}
+
+.card_suggest_read_more_btn {
+   display: none;
+   color: var(--white);
+   padding: 1rem;
+   border-radius: 0.5rem;
+   background: var(--almost-black-nav-bg);
+   text-decoration: none;
+   position: absolute;
+}
+
+.card_suggest_image_container:hover .card_suggest_read_more_btn {
+   display: block;
+   cursor: pointer;
+}
+
+@media (min-width: 670px) {
+   .card_suggest_container {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .card_suggest {
+      width: 30rem;
+   }
 }

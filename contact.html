@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="./styles/destination.css" />
    </head>
    <body>
-      <div id="home" class="destination_container">
+      <div id="home" class="contact_container">
          <header class="header">
             <nav class="nav_bar">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
@@ -33,9 +33,6 @@
                         <li class="menu_item" id="tour_packages">
                            <a href="#tours"> Tour Packages </a>
                         </li>
-                        <li class="menu_item" id="contact_us">
-                           <a href="#contact"> Contact Us </a>
-                        </li>
                         <li class="menu_item" id="about_us">
                            <a href="#about"> About Us </a>
                         </li>
@@ -53,9 +50,9 @@
             </nav>
          </header>
 
-         <main>
+         <main class="main_contact">
             <section id="contact" class="contact">
-               <h2 class="contact_title">Get In Touch</h2>
+               <h2 class="contact_title">CONTACT US</h2>
                <div class="address_container">
                   <div class="address">
                      <div class="full_address">
@@ -77,7 +74,7 @@
                      </div>
                   </div>
 
-                  <form action="">
+                  <form action="" class="form_contact">
                      <p class="form_title">For inquiries, fillup the form below:</p>
                      <div class="name_container">
                         <label for="name">Full Name</label>
@@ -123,7 +120,77 @@
                </div>
             </section>
          </main>
-         <footer></footer>
+
+         <footer>
+            <div class="footer_content_container">
+               <div class="contacts_media_container">
+                  <div class="footer_para_text_container">
+                     <div class="footer_logo_container">
+                        <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
+                     </div>
+
+                     <p class="footer_para_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                  </div>
+
+                  <ul class="social_media_container">
+                     <li>
+                        <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                     </li>
+                     <li>
+                        <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
+                     </li>
+
+                     <li>
+                        <img src="./images/twitter.svg" alt="Twitter" class="icon icon_twitter" />
+                     </li>
+
+                     <li>
+                        <img src="./images/youtube.svg" alt="Youtube" class="icon icon_youtube" />
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="newsletter_container">
+                  <div class="newsletter_title">
+                     <h2 class="newsletter_text">Newsletter</h2>
+
+                     <p class="newsletter_para_text">
+                        To recieve updates on your favorite destination, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
+                     </p>
+                  </div>
+
+                  <form class="subscribe_btn_container">
+                     <input type="email" class="subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
+                     <div class="warning">Check your email please..</div>
+
+                     <input type="submit" class="subscribe_btn" id="subscribe_btn" value="Subscribe" aria-label="Subscribe Button" />
+                  </form>
+               </div>
+            </div>
+
+            <ul class="footer_menu_container">
+               <li class="footer_menu_item" id="home">
+                  <a href="#home"> Home </a>
+               </li>
+               <li class="footer_menu_item" id="special_offer">
+                  <a href="#offers"> Special Offer </a>
+               </li>
+               <li class="footer_menu_item" id="tour_packages">
+                  <a href="#tours"> Tour Packages </a>
+               </li>
+               <li class="footer_menu_item" id="contact_us">
+                  <a href="#contact"> Contact Us </a>
+               </li>
+               <li class="footer_menu_item" id="about_us">
+                  <a href="#about"> About Us </a>
+               </li>
+            </ul>
+
+            <div class="attribution">
+               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. Coded by
+               <a href="https://github.com/boymelvs" target="_blank" rel="noreferrer noopener">boymelvs</a>.
+            </div>
+         </footer>
       </div>
    </body>
 </html>
