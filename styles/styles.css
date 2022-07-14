@@ -722,9 +722,14 @@ footer {
 }
 
 .social_media_container .icon:hover {
+   filter: brightness(0) invert(1);
+   transition: all 350ms;
    transform: scale(1.1);
    cursor: pointer;
 }
+
+/* .social_media_container .icon:hover {
+} */
 
 .footer_logo_container {
    width: 10rem;

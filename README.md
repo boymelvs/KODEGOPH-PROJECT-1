@@ -17,7 +17,7 @@ This is a record of project-1 activities done in bootcamp.
 
 ### The Project
 
-The project is about to build website. Individual project.
+The project is about to build my first website. Individual project.
 
 ### Links
 
