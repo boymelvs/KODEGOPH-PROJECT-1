@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>First Project</title>
+
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./styles/destination.css" />
+   </head>
+   <body>
+      <div id="home" class="destination_container">
+         <header class="header">
+            <nav class="nav_bar">
+               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
+
+               <div class="menu_logo_container">
+                  <div class="logo_container">
+                     <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
+                  </div>
+
+                  <div class="menu_container">
+                     <div class="overlay"></div>
+
+                     <ul class="menu_dropdown">
+                        <li class="menu_item" id="home">
+                           <a href="./index.html"> Home </a>
+                        </li>
+                        <li class="menu_item" id="special_offer">
+                           <a href="#offers"> Special Offer </a>
+                        </li>
+                        <li class="menu_item" id="tour_packages">
+                           <a href="#tours"> Tour Packages </a>
+                        </li>
+                        <li class="menu_item" id="contact_us">
+                           <a href="./contact.html"> Contact Us </a>
+                        </li>
+                        <li class="menu_item" id="about_us">
+                           <a href="#about"> About Us </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="burger_container">
+                  <label for="burger_checkbox" class="burger_label">
+                     <span class="burger_line line1"></span>
+                     <span class="burger_line line2"></span>
+                     <span class="burger_line line3"></span>
+                  </label>
+               </div>
+            </nav>
+         </header>
+
+         <main>
+            <section class="main_content">
+               <h1 class="tour_title">BORACAY <span>TOUR PACKAGES</span></h1>
+
+               <div class="detail_container">
+                  <div class="img_container">
+                     <img src="./images/tours/boracay.jpg" alt="Boracay" />
+                  </div>
+
+                  <div class="tabs_container">
+                     <input type="radio" name="tabs" id="rates" checked />
+                     <label for="rates">Rates</label>
+
+                     <input type="radio" name="tabs" id="inclusions" />
+                     <label for="inclusions">Inclusions</label>
+
+                     <input type="radio" name="tabs" id="optional" />
+                     <label for="optional">Tours</label>
+
+                     <input type="radio" name="tabs" id="itinerary" />
+                     <label for="itinerary">Itinerary</label>
+
+                     <div class="tab rates">
+                        <div class="tab_content hotel lacarmela">
+                           <h3 class="hotel_name">HOTEL NAME 1</h3>
+                           <div class="hotel_room">
+                              <img src="./images/hotel/lacarmela-standard-room.png" alt="La Carmela" />
+                           </div>
+
+                           <div class="travel_dates">
+                              <p><strong> Valid: </strong> Until Dec. 15, 2022</p>
+                              <p><strong> Quad/Triple/Double: </strong> Php 3,800</p>
+                              <p><strong> Extra Night: </strong> Php 1,525</p>
+                           </div>
+
+                           <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                        </div>
+
+                        <div class="tab_content hotel boracay_haven_suites">
+                           <h3 class="hotel_name">HOTEL NAME 2</h3>
+                           <div class="hotel_room">
+                              <img src="./images/hotel/BorcayHavenSuites_DeLuxe.webp" alt="Boracay Haven Suites" />
+                           </div>
+
+                           <div class="travel_dates">
+                              <p><strong> Valid: </strong> Until March 2023</p>
+
+                              <p><strong> Triple: </strong> Php 4,450</p>
+                              <p><strong> Double: </strong> Php 4,750</p>
+                              <p><strong> Extra Night: </strong> Php 2,050</p>
+                           </div>
+
+                           <input type="button" name="inquire_btn" class="inquire_btn" id="inquire_btn" value="Inquire Now" aria-label="inquire button" />
+                        </div>
+                     </div>
+
+                     <div class="tab inclusions">
+                        <ul class="tab_content inclusion_container">
+                           <li>Hotel Accommodation with daily breakfast</li>
+                           <li>Round trip Transfers (Airport to Hotel to Airport) arrival until 5:00pm only</li>
+                        </ul>
+
+                        <p class="tab_content">
+                           <strong> Exclusion: </strong>
+                           Personal purchases. medical insurance especially for clients with pre-existing conditions, souvenirs and other incidentals not mention in inclusions.
+                        </p>
+                     </div>
+
+                     <div class="tab optional">
+                        <ul class="tab_content optional_container">
+                           <li>
+                              Joiner Island Hopping (4-5hrs) – includes lunch, snorkelling gear, kawa bath. Tour highlights: Puka Beach, Snorkelling, Kawa Bath -
+                              <strong> Php 800 </strong>
+                           </li>
+                           <li>15 mins. Banana boat (min. of 5 persons) - <strong> Php 600 </strong></li>
+                           <li>45mins. Paraw Sailing (min. of 4persons) - <strong> Php 875 </strong></li>
+                        </ul>
+                     </div>
+
+                     <div class="tab itinerary">
+                        <div class="tab_content itinerary_container">
+                           <p>
+                              <strong> Day 1: </strong>
+                              Arrival at Airport, meet by tour coordinator and then hotel check-in.
+                           </p>
+                           <p><strong> Day 2: </strong> Breakfast, free time or choose/join optional tours.</p>
+                           <p>
+                              <strong> Day 3: </strong>
+                              Breakfast, free time. Hotel check-out, meet coordinator and transfer to Airport.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer></footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>First Project</title>
+
+      <link rel="stylesheet" href="./styles/styles.css" />
+   </head>
+   <body>
+      <div id="home" class="container">
+         <header>
+            <nav class="nav_bar">
+               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
+
+               <div class="menu_logo_container">
+                  <div class="logo_container">
+                     <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
+                  </div>
+
+                  <div class="menu_container">
+                     <div class="overlay"></div>
+
+                     <ul class="menu_dropdown">
+                        <li class="menu_item" id="home">
+                           <a href="#"> Home </a>
+                        </li>
+                        <li class="menu_item" id="special_offer">
+                           <a href="#offers"> Special Offer </a>
+                        </li>
+                        <li class="menu_item" id="tour_packages">
+                           <a href="#tours"> Tour Packages </a>
+                        </li>
+                        <li class="menu_item" id="contact_us">
+                           <a href="#contact"> Contact Us </a>
+                        </li>
+                        <li class="menu_item" id="about_us">
+                           <a href="#about"> About Us </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="burger_container">
+                  <label for="burger_checkbox" class="burger_label">
+                     <span class="burger_line line1"></span>
+                     <span class="burger_line line2"></span>
+                     <span class="burger_line line3"></span>
+                  </label>
+               </div>
+            </nav>
+
+            <h1 class="header_para_text">We're proud to be a Nampicuan based travel agency. Find great deals on the places you want to go.</h1>
+         </header>
+
+         <main>
+            <section id="offers" class="special_offer_container">
+               <div class="special_offer">
+                  <div class="border_out">
+                     <div class="border_in">
+                        <p class="num">35%</p>
+                        <p class="off">off</p>
+                     </div>
+                  </div>
+
+                  <div class="offer_text_container">
+                     <h2 class="offer_title">SPECIAL OFFER</h2>
+                     <p class="offer_para_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita officia iste, magni asperiores consequuntur rerum ipsa voluptatum, delectus
+                        deserunt quibusdam fugit, eaque optio reiciendis quas amet quia. Voluptatem, obcaecati.
+                     </p>
+                  </div>
+
+                  <div class="offer_btn_container">
+                     <a href="./destination.html">
+                        <input type="button" name="grab_now_btn" id="grab_now_btn" class="grab_now_btn" value="Grab Now" aria-label="grab now button" />
+                     </a>
+                  </div>
+               </div>
+            </section>
+
+            <section id="tours" class="packages_container">
+               <div class="local_destinations">
+                  <div class="tour_title">
+                     <h2 class="destination_text_title">LOCAL DESTINATIONS</h2>
+                     <p class="destinations_para_text">Travel all over the Philippines</p>
+                  </div>
+
+                  <div class="card_container">
+                     <!-- /* boracay */ -->
+                     <div class="card boracay">
+                        <div class="card_image_container">
+                           <img src="./images/tours/boracay.jpg" alt="Boracay" class="card_img boracay_img" />
+
+                           <div class="card_price">Php 3,750</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BORACAY</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* puerto princesa */ -->
+                     <div class="card puerto_princesa">
+                        <div class="card_image_container">
+                           <img src="./images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_img puerto_princesa_img" />
+
+                           <div class="card_price">Php 3,100</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">PUERTO PRINCESA</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* coron */ -->
+                     <div class="card coron">
+                        <div class="card_image_container">
+                           <img src="./images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_img coron_img" />
+
+                           <div class="card_price">Php 3,200</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">CORON</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* el nido */ -->
+                     <div class="card elnido">
+                        <div class="card_image_container">
+                           <img src="./images/tours/EL-NIDO.jpg" alt="El Nido" class="card_img elnido_img" />
+
+                           <div class="card_price">Php 3,150</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">EL NIDO</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* baguio */ -->
+                     <div class="card baguio">
+                        <div class="card_image_container">
+                           <img src="./images/tours/BAGUIO.jpg" alt="Baguio" class="card_img baguio_img" />
+
+                           <div class="card_price">Php 3,600</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BAGUIO</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* batanes */ -->
+                     <div class="card batanes">
+                        <div class="card_image_container">
+                           <img src="./images/tours/BATANES.jpg" alt="Batanes" class="card_img batanes_img" />
+
+                           <div class="card_price">Php 3,200</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BATANES</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* bohol */ -->
+                     <div class="card bohol">
+                        <div class="card_image_container">
+                           <img src="./images/tours/BOHOL.jpg" alt="Bohol" class="card_img bohol_img" />
+
+                           <div class="card_price">Php 3,300</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BOHOL</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* cebu */ -->
+                     <div class="card cebu">
+                        <div class="card_image_container">
+                           <img src="./images/tours/CEBU.jpg" alt="Cebu" class="card_img cebu_img" />
+
+                           <div class="card_price">Php 4,100</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">CEBU</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="contact" class="contact">
+               <h2 class="contact_title">Get In Touch</h2>
+               <div class="address_container">
+                  <div class="address">
+                     <div class="full_address">
+                        <strong> Address: </strong>
+                        <p>Morondo St</p>
+                        <p>Brgy Cabaducan East</p>
+                        <p>Nampicuan, Nueva Ecija 3116</p>
+                     </div>
+
+                     <div class="contact_info">
+                        <div class="phone">
+                           <img src="./images/icon-phone.svg" alt="Phone" />
+                           <p>+6312345678</p>
+                        </div>
+                        <div class="email">
+                           <img src="./images/icon-email.svg" alt="Email" />
+                           <p>email@email.com</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <form action="" class="form_contact">
+                     <p class="form_title">For inquiries, fillup the form below:</p>
+                     <div class="name_container">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" class="name" aria-label="name" />
+                     </div>
+
+                     <div class="email_container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="email" aria-label="email" />
+                     </div>
+
+                     <div class="phone_container">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" class="phone" aria-label="phone" />
+                     </div>
+
+                     <div class="subject_container">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="subject" />
+                     </div>
+
+                     <div class="message">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                     </div>
+
+                     <div class="submit_btn_container">
+                        <input type="submit" name="submit_btn" id="submit_btn" class="submit_btn" aria-label="submit_btn" />
+                     </div>
+                  </form>
+               </div>
+
+               <div class="maps">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.155236279639!2d120.63988165787033!3d15.734706578974443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7149f07e07f7def1!2zMTXCsDQ0JzA0LjkiTiAxMjDCsDM4JzI3LjUiRQ!5e0!3m2!1sen!2sph!4v1657756967228!5m2!1sen!2sph"
+                     width="600"
+                     height="450"
+                     style="border: 0"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+               </div>
+            </section>
+         </main>
+
+         <footer>
+            <div class="footer_content_container">
+               <div class="contacts_media_container">
+                  <div class="footer_para_text_container">
+                     <div class="footer_logo_container">
+                        <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
+                     </div>
+
+                     <p class="footer_para_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                  </div>
+
+                  <ul class="social_media_container">
+                     <li>
+                        <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                     </li>
+                     <li>
+                        <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
+                     </li>
+
+                     <li>
+                        <img src="./images/twitter.svg" alt="Twitter" class="icon icon_twitter" />
+                     </li>
+
+                     <li>
+                        <img src="./images/youtube.svg" alt="Youtube" class="icon icon_youtube" />
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="newsletter_container">
+                  <div class="newsletter_title">
+                     <h2 class="newsletter_text">Newsletter</h2>
+
+                     <p class="newsletter_para_text">
+                        To recieve updates on your favorite destination, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
+                     </p>
+                  </div>
+
+                  <form class="subscribe_btn_container">
+                     <input type="email" class="subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
+                     <div class="warning">Check your email please..</div>
+
+                     <input type="submit" class="subscribe_btn" id="subscribe_btn" value="Subscribe" aria-label="Subscribe Button" />
+                  </form>
+               </div>
+            </div>
+
+            <ul class="footer_menu_container">
+               <li class="footer_menu_item" id="home">
+                  <a href="#home"> Home </a>
+               </li>
+               <li class="footer_menu_item" id="special_offer">
+                  <a href="#offers"> Special Offer </a>
+               </li>
+               <li class="footer_menu_item" id="tour_packages">
+                  <a href="#tours"> Tour Packages </a>
+               </li>
+               <li class="footer_menu_item" id="contact_us">
+                  <a href="#contact"> Contact Us </a>
+               </li>
+               <li class="footer_menu_item" id="about_us">
+                  <a href="#about"> About Us </a>
+               </li>
+            </ul>
+
+            <div class="attribution">
+               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. Coded by
+               <a href="https://github.com/boymelvs" target="_blank" rel="noreferrer noopener">boymelvs</a>.
+            </div>
+         </footer>
+      </div>
+
+      <script src="./scripts/index.js"></script>
+   </body>
+</html>

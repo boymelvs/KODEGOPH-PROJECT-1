@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>First Project</title>
+
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./styles/destination.css" />
+   </head>
+   <body>
+      <div id="home" class="destination_container">
+         <header class="header">
+            <nav class="nav_bar">
+               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
+
+               <div class="menu_logo_container">
+                  <div class="logo_container">
+                     <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
+                  </div>
+
+                  <div class="menu_container">
+                     <div class="overlay"></div>
+
+                     <ul class="menu_dropdown">
+                        <li class="menu_item" id="home">
+                           <a href="./index.html"> Home </a>
+                        </li>
+                        <li class="menu_item" id="special_offer">
+                           <a href="#offers"> Special Offer </a>
+                        </li>
+                        <li class="menu_item" id="tour_packages">
+                           <a href="#tours"> Tour Packages </a>
+                        </li>
+                        <li class="menu_item" id="contact_us">
+                           <a href="#contact"> Contact Us </a>
+                        </li>
+                        <li class="menu_item" id="about_us">
+                           <a href="#about"> About Us </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="burger_container">
+                  <label for="burger_checkbox" class="burger_label">
+                     <span class="burger_line line1"></span>
+                     <span class="burger_line line2"></span>
+                     <span class="burger_line line3"></span>
+                  </label>
+               </div>
+            </nav>
+         </header>
+
+         <main>
+            <section id="contact" class="contact">
+               <h2 class="contact_title">Get In Touch</h2>
+               <div class="address_container">
+                  <div class="address">
+                     <div class="full_address">
+                        <strong> Address: </strong>
+                        <p>Morondo St</p>
+                        <p>Brgy Cabaducan East</p>
+                        <p>Nampicuan, Nueva Ecija 3116</p>
+                     </div>
+
+                     <div class="contact_info">
+                        <div class="phone">
+                           <img src="./images/icon-phone.svg" alt="Phone" />
+                           <p>+6312345678</p>
+                        </div>
+                        <div class="email">
+                           <img src="./images/icon-email.svg" alt="Email" />
+                           <p>email@email.com</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <form action="">
+                     <p class="form_title">For inquiries, fillup the form below:</p>
+                     <div class="name_container">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" class="name" aria-label="name" />
+                     </div>
+
+                     <div class="email_container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="email" aria-label="email" />
+                     </div>
+
+                     <div class="phone_container">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" class="phone" aria-label="phone" />
+                     </div>
+
+                     <div class="subject_container">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="subject" />
+                     </div>
+
+                     <div class="message">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                     </div>
+
+                     <div class="submit_btn_container">
+                        <input type="submit" name="submit_btn" id="submit_btn" class="submit_btn" aria-label="submit_btn" />
+                     </div>
+                  </form>
+               </div>
+
+               <div class="maps">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.155236279639!2d120.63988165787033!3d15.734706578974443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7149f07e07f7def1!2zMTXCsDQ0JzA0LjkiTiAxMjDCsDM4JzI3LjUiRQ!5e0!3m2!1sen!2sph!4v1657756967228!5m2!1sen!2sph"
+                     width="600"
+                     height="450"
+                     style="border: 0"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+               </div>
+            </section>
+         </main>
+         <footer></footer>
+      </div>
+   </body>
+</html>
