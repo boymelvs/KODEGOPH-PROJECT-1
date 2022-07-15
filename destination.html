@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>First Project</title>
 
-      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./styles/header-footer.css" />
       <link rel="stylesheet" href="./styles/destination.css" />
       <link rel="stylesheet" href="./styles/youlikes.css" />
    </head>
@@ -21,6 +21,7 @@
                      <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
                   </div>
 
+                  <!-- /* menu container */ -->
                   <div class="menu_container">
                      <div class="overlay"></div>
 
@@ -31,11 +32,9 @@
                         <li class="menu_item" id="special_offer">
                            <a href="./special-offers.html"> Special Offer </a>
                         </li>
-
                         <li class="menu_item" id="tour_packages">
                            <a href="./destination.html"> Tour Packages </a>
                         </li>
-
                         <li class="menu_item" id="contact_us">
                            <a href="./contact.html"> Contact Us </a>
                         </li>
@@ -57,8 +56,8 @@
          </header>
 
          <main class="main_destination">
-            <section>
-               <h1 class="tour_title">BORACAY <span>TOUR PACKAGES</span></h1>
+            <section class="destination_content">
+               <h2 class="tour_title">BORACAY <span>TOUR PACKAGES</span></h2>
 
                <div class="detail_container">
                   <div class="img_container">
@@ -141,15 +140,17 @@
                      </div>
 
                      <div class="tab inclusions">
-                        <ul class="tab_content inclusion_container">
-                           <li>Hotel Accommodation with daily breakfast</li>
-                           <li>Round trip Transfers (Airport to Hotel to Airport) arrival until 5:00pm only</li>
-                        </ul>
+                        <div class="tab_content">
+                           <ul class="inclusion_container">
+                              <li>Hotel Accommodation with daily breakfast</li>
+                              <li>Round trip Transfers (Airport to Hotel to Airport) arrival until 5:00pm only</li>
+                           </ul>
 
-                        <p class="tab_content">
-                           <strong> Exclusion: </strong>
-                           Personal purchases. medical insurance especially for clients with pre-existing conditions, souvenirs and other incidentals not mention in inclusions.
-                        </p>
+                           <p>
+                              <strong class="inclusions_text"> Exclusion: </strong>
+                              Personal purchases. medical insurance especially for clients with pre-existing conditions, souvenirs and other incidentals not mention in inclusions.
+                           </p>
+                        </div>
                      </div>
 
                      <div class="tab optional">
@@ -180,6 +181,7 @@
                </div>
             </section>
 
+            <!-- /* you may also like */ -->
             <section class="tour_suggestions">
                <div class="tour_suggestions_container">
                   <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
@@ -262,7 +264,9 @@
 
                   <ul class="social_media_container">
                      <li>
-                        <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                           <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                        </a>
                      </li>
                      <li>
                         <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />

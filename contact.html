@@ -6,12 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>First Project</title>
 
-      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./styles/header-footer.css" />
       <link rel="stylesheet" href="./styles/contact.css" />
       <link rel="stylesheet" href="./styles/youlikes.css" />
    </head>
+
    <body>
-      <div id="home" class="contact_container">
+      <div id="contact" class="contact_container">
          <header class="contact_header">
             <nav class="nav_bar">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
@@ -21,6 +22,7 @@
                      <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
                   </div>
 
+                  <!-- /* menu container */ -->
                   <div class="menu_container">
                      <div class="overlay"></div>
 
@@ -54,8 +56,9 @@
             </nav>
          </header>
 
-         <main class="main_contact">
-            <section id="contact" class="contact">
+         <main class="main_contact_page">
+            <!-- /* contact us */ -->
+            <section id="contact" class="contact_us">
                <h2 class="contact_title">CONTACT US</h2>
                <div class="address_container">
                   <div class="address">
@@ -68,11 +71,11 @@
 
                      <div class="contact_info">
                         <div class="phone">
-                           <img src="./images/icon-phone.svg" alt="Phone" />
+                           <img src="./images/icon-phone-black.svg" alt="Phone" />
                            <p>+6312345678</p>
                         </div>
                         <div class="email">
-                           <img src="./images/icon-email.svg" alt="Email" />
+                           <img src="./images/icon-email-black.svg" alt="Email" />
                            <p>email@email.com</p>
                         </div>
                      </div>
@@ -112,6 +115,7 @@
                </div>
 
                <div class="maps">
+                  <h2 class="map_location">OUR LOCATION</h2>
                   <iframe
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.155236279639!2d120.63988165787033!3d15.734706578974443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7149f07e07f7def1!2zMTXCsDQ0JzA0LjkiTiAxMjDCsDM4JzI3LjUiRQ!5e0!3m2!1sen!2sph!4v1657756967228!5m2!1sen!2sph"
                      width="600"
@@ -124,7 +128,8 @@
                </div>
             </section>
 
-            <section id="likes" class="tour_suggestions">
+            <!-- /* you may also like */ -->
+            <section class="tour_suggestions">
                <div class="tour_suggestions_container">
                   <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
 
@@ -206,7 +211,9 @@
 
                   <ul class="social_media_container">
                      <li>
-                        <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                           <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                        </a>
                      </li>
                      <li>
                         <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
@@ -245,16 +252,16 @@
                   <a href="./index.html"> Home </a>
                </li>
                <li class="footer_menu_item" id="special_offer">
-                  <a href="./special-offers.html"> Special Offer </a>
+                  <a href="./special-offers.html"> Offers </a>
                </li>
                <li class="footer_menu_item" id="tour_packages">
-                  <a href="./destination.html"> Tour Packages </a>
+                  <a href="./destination.html"> Packages </a>
                </li>
                <li class="footer_menu_item" id="contact_us">
                   <a href="./contact.html"> Contact </a>
                </li>
                <li class="footer_menu_item" id="about_us">
-                  <a href="./about.html"> About Us </a>
+                  <a href="./about.html"> About </a>
                </li>
             </ul>
 
