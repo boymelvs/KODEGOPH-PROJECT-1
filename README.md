@@ -13,7 +13,7 @@ Thanks for checking out this kodegph bootcamp first project.
 
 ## Overview
 
-This is a record of project-1 activities done in bootcamp.
+This is my Major Project I : Multi-page Responsive Website in bootcamp.
 
 ### The Project
 
