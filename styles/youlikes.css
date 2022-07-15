@@ -1,0 +1,104 @@
+.tour_suggestions {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 4rem 2rem;
+}
+
+.about_tour_suggestions {
+   background: var(--white);
+   border-radius: 0.5rem;
+}
+
+#likes {
+   padding: 0 2rem 4rem 2rem;
+}
+
+.tour_suggestions_title {
+   padding-bottom: 2rem;
+}
+
+.card_suggest_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+   width: 100%;
+}
+
+.card_suggest {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   border-radius: 0.5rem;
+   background: var(--white);
+   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+   text-align: center;
+}
+
+.card_suggest_image_container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 20rem;
+
+   position: relative;
+   overflow: hidden;
+   border-radius: 0.5rem 0.5rem 0 0;
+   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.card_suggest_image_container img {
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem 0.5rem 0 0;
+   transition: all 1.5s ease;
+}
+
+.card_suggest_image_container:hover .card_suggest_img {
+   transform: scale(1.5);
+   cursor: pointer;
+}
+
+.card_suggest_price {
+   color: var(--white);
+   font-weight: var(--font-weight-600);
+   border-radius: 1rem;
+   padding: 1rem;
+   background: var(--almost-black-nav-bg);
+
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+}
+
+.card_suggest_read_more_btn {
+   display: none;
+   color: var(--white);
+   padding: 1rem;
+   border-radius: 0.5rem;
+   background: var(--almost-black-nav-bg);
+   text-decoration: none;
+   position: absolute;
+}
+
+.card_suggest_image_container:hover .card_suggest_read_more_btn {
+   display: block;
+   cursor: pointer;
+}
+
+@media (min-width: 670px) {
+   .card_suggest_container {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .card_suggest {
+      width: 30rem;
+   }
+}
+
+/*================= END OF YOU MAY ALSO LIKE =================*/

@@ -1,0 +1,22 @@
+.contact_containers {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-width: 32rem;
+   min-height: 100vh;
+}
+
+.main_contact {
+   margin-top: 8rem;
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   max-width: 144rem;
+   width: 100%;
+}
+
+.contact_header {
+   background-image: none;
+   min-height: unset;
+}
