@@ -1,127 +1,49 @@
-.main_page {
-   display: flex;
-   flex-direction: column;
-   gap: 0.1rem;
-   max-width: 144rem;
-   width: 100%;
-}
-
 .special_offer_container {
-   display: flex;
-   padding: 1rem;
-   background: var(--gray);
-   width: 100%;
+   max-width: 1440px;
+   background: hsl(0, 0%, 49%);
 }
 
 .special_offer {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 5rem;
-   padding: 4rem 2rem;
-   background: var(--eclipse);
-   width: 100%;
-   border-radius: 1rem;
+   background: hsl(0, 0%, 24%);
 }
 
 .border_out {
-   border-radius: 0 2rem 0 2rem;
-   border: 0.2rem solid var(--gray);
+   border-radius: 0 10px 0 10px;
+   border: 2px solid hsl(0, 0%, 49%);
 }
 
 .border_in {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: var(--buttercup);
-   border: 0.2rem solid var(--eclipse);
-   color: var(--white);
-   padding: 1.5rem;
-   border-radius: 0 2rem 0 2rem;
-   font-size: 2rem;
-}
-
-.num {
-   font-weight: var(--font-weight-700);
-   font-size: 4rem;
+   border-radius: 0 10px 0 10px;
+   background: hsl(36, 71%, 53%);
+   border: 2px solid hsl(0, 0%, 24%);
 }
 
 .off {
-   margin-top: -1.5rem;
-}
-
-.offer_text_container {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   color: var(--white);
-   text-align: center;
-   font-weight: var(--font-weight-600);
+   margin-top: -10px;
 }
 
 #grab_now_btn {
-   font-size: 1.6rem;
    border: none;
    border-radius: 0.5rem;
-   background: var(--outrageous-orange);
-   padding: 1rem 5rem;
-   color: var(--white);
-   font-weight: var(--font-weight-600);
-   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+   background: hsl(14, 100%, 57%);
+   color: white;
+   box-shadow: 0 0 0.5rem hsla(14, 100%, 57%, 0.5);
 }
 
 #grab_now_btn:hover {
-   background: var(--buttercup);
+   background: hsl(36, 71%, 53%);
    cursor: pointer;
 }
 
-@media (min-width: 635px) {
-   .special_offer {
-      flex-direction: row;
-      gap: 1rem;
-      padding: 2rem;
+@media (min-width: 992px) {
+   .offer_text_container {
+      width: 50%;
    }
 }
 
-@media (min-width: 1024px) {
-   .special_offer_container {
-      padding: 6rem;
-   }
-
-   .special_offer {
-      flex-direction: row;
-      gap: 4rem;
-      padding: 4rem;
-   }
-}
-
-@media (min-width: 1201px) {
-   .special_offer_container {
-      padding: 8rem;
-   }
-
-   .special_offer {
-      flex-direction: row;
-      gap: 10rem;
-      padding: 10rem;
-   }
-}
-
-/*================= END OF SPECIAL OFFER SECTION =================*/
-
-.local_destinations {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-   width: 100%;
-   text-align: center;
-   padding: 6rem 1rem;
-}
-
-.tour_title {
-   width: 100%;
-   padding-bottom: 2rem;
+/*================= END OF SPECIAL OFFERS =================*/
+.packages_container {
+   max-width: 1440px;
 }
 
 .card_container {
@@ -129,16 +51,16 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 4rem 1rem;
+   gap: 40px 10px;
 }
 
 .card {
    display: flex;
    flex-direction: column;
    width: 100%;
-   border-radius: 0.5rem;
-   background: var(--white);
-   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   background: white;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .card_image_container {
@@ -147,18 +69,18 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 25rem;
+   height: 250px;
 
    position: relative;
    overflow: hidden;
-   border-radius: 0.5rem 0.5rem 0 0;
-   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+   border-radius: 5px 5px 0 0;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .card_image_container img {
    width: 100%;
    height: 100%;
-   border-radius: 0.5rem 0.5rem 0 0;
+   border-radius: 5px 5px 0 0;
    transition: all 1.5s ease;
 }
 
@@ -168,29 +90,29 @@
 }
 
 .card_price {
-   color: var(--white);
-   font-weight: var(--font-weight-600);
-   border-radius: 1rem;
-   padding: 1rem;
-   background: var(--almost-black-nav-bg);
+   color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   padding: 10px;
+   background: rgb(20, 20, 20, 0.8);
 
    position: absolute;
-   top: 2rem;
-   left: 2rem;
+   top: 20px;
+   left: 20px;
 }
 
 .read_more_btn {
    display: none;
-   color: var(--white);
-   padding: 1rem;
-   border-radius: 0.5rem;
-   background: var(--almost-black-nav-bg);
+   padding: 10px;
+   border-radius: 5px;
+   background: rgb(20, 20, 20, 0.8);
    text-decoration: none;
    position: absolute;
 }
 
-.card_image_container:hover .read_more_btn {
+.card_image_container:hover > .read_more_btn {
    display: block;
+   color: white;
    cursor: pointer;
 }
 
@@ -198,16 +120,12 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 1rem;
-   padding: 1rem;
+   gap: 10px;
+   padding: 10px;
 }
 
-.card_btn_container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 2rem;
-   font-weight: var(--font-weight-700);
+.card_title {
+   font-weight: bold;
 }
 
 @media (min-width: 670px) {
@@ -217,165 +135,31 @@
    }
 
    .card {
-      width: 32rem;
+      width: 320px;
    }
 }
 
-/*================= END OF TOURS =================*/
+/*================= END OF TOUR PACKAGES =================*/
 .contact_us {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 2rem;
-   padding: 4rem 1rem 0rem 1rem;
-   color: var(--white);
-   background: var(--eclipse);
+   max-width: 1440px;
+   background: hsl(0, 0%, 24%);
 }
 
-.address_container {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-   width: 100%;
-}
-
-.address {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   padding: 4rem;
-   width: 100%;
-   border-radius: 0.5rem;
-   border: 0.1rem solid var(--white);
-}
-
-.phone,
-.email {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.form_contact {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-   width: 100%;
-   padding: 2rem;
-   border-radius: 0.5rem;
-   border: 0.1rem solid var(--white);
-}
-
-form .name,
+.name,
 .email,
 .phone,
 .subject,
 textarea {
    width: 100%;
-   padding: 1rem;
-}
-
-.name_container,
-.email_container,
-.phone_container,
-.subject_container {
-   display: flex;
-   flex-direction: column;
-}
-
-.submit_btn_container {
-   text-align: center;
-}
-
-#submit_btn {
-   font-size: 1.6rem;
-   padding: 1rem 5rem;
+   padding: 7px;
    border: none;
-   border-radius: 0.5rem;
-   color: var(--white);
-   background: var(--outrageous-orange);
-   font-weight: var(--font-weight-700);
+   border-radius: 5px;
+   outline: none;
 }
 
-#submit_btn:hover {
-   background: var(--buttercup);
-   cursor: pointer;
-}
-
-.maps {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 2rem;
-   width: 100%;
-   border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.maps iframe {
-   border-radius: 0.5rem 0.5rem 0 0;
-   width: 100%;
-}
-
-@media (min-width: 768px) {
-   .contact {
-      padding: 0 2rem;
-   }
-
-   .address_container {
-      flex-direction: row;
-      gap: 1rem;
-   }
-
-   .address {
-      padding: 4rem;
-   }
-
-   .form_contact {
-      padding: 4rem;
-   }
-}
-
-/*================= END OF CONTACT US =================*/
+/*================= END OF CONTACT PACKAGES =================*/
 .about_us {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   gap: 2rem;
-   padding: 4rem 1rem;
-   background: var(--white);
-}
-
-.about_container {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-}
-
-.company_info {
-   padding: 2rem 1rem;
-   border-radius: 0.5rem;
-   width: 100%;
-   border-radius: 0.5rem;
-   border: 0.1rem solid var(--gray);
-}
-
-.services_offer {
-   display: flex;
-   flex-direction: column;
-   padding: 2rem 1rem;
-   width: 100%;
-   border-radius: 0.5rem;
-   border: 0.1rem solid var(--gray);
-}
-
-.services_container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 6rem;
-   padding: 6rem 2rem 2rem 2rem;
+   max-width: 1440px;
 }
 
 .services {
@@ -383,11 +167,12 @@ textarea {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
    gap: 8rem;
    width: 100%;
-   height: 15rem;
-   border-radius: 0.5rem;
-   border: 0.1rem solid var(--gray);
+   height: 150px;
+   border-radius: 5px;
+   border: 1px solid black;
    position: relative;
 }
 
@@ -396,13 +181,13 @@ textarea {
    justify-content: center;
    align-items: center;
    border-radius: 50%;
-   border: 0.1rem solid var(--gray);
-   padding: 1.5rem;
-   width: 8rem;
-   height: 8rem;
+   border: 1px solid black;
+   padding: 15px;
+   width: 80px;
+   height: 80px;
    position: absolute;
-   top: -4rem;
-   background: var(--white);
+   top: -40px;
+   background: white;
 }
 
 .services_icon {
@@ -416,23 +201,10 @@ textarea {
    align-items: center;
    width: 100%;
    height: 100%;
-   font-weight: var(--font-weight-700);
+   font-weight: bold;
 }
 
 @media (min-width: 768px) {
-   .company_info {
-      padding: 4rem 1rem;
-   }
-
-   .services_offer {
-      padding: 4rem 1rem;
-   }
-
-   .about_text {
-      text-align: left;
-      padding: 2rem;
-   }
-
    .services_container {
       flex-direction: row;
       flex-wrap: wrap;
@@ -440,19 +212,18 @@ textarea {
    }
 
    .services {
-      width: 18rem;
+      width: 180px;
    }
 }
 
-@media (min-width: 1024px) {
-   .about_container {
-      flex-direction: row;
-      gap: 1rem;
+@media (min-width: 992px) {
+   .company_info {
+      width: 50%;
+   }
+
+   .services_offer {
+      width: 50%;
    }
 }
 
-@media (min-width: 1201px) {
-   .services {
-      width: 22rem;
-   }
-}
+/*================= END OF ABOUT PACKAGES =================*/

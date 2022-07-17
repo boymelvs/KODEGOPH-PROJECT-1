@@ -1,22 +1,9 @@
-.tour_suggestions {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   padding: 4rem 0rem;
-}
-
-.tour_suggestions_container {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
-
 .card_suggest_container {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
-   gap: 1.5rem;
+   justify-content: space-evenly;
+   gap: 10px;
    width: 100%;
 }
 
@@ -24,9 +11,8 @@
    display: flex;
    flex-direction: column;
    width: 100%;
-   border-radius: 0.5rem;
-   background: var(--white);
-   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
    text-align: center;
 }
 
@@ -36,18 +22,18 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 20rem;
+   height: 200px;
 
    position: relative;
    overflow: hidden;
-   border-radius: 0.5rem 0.5rem 0 0;
-   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+   border-radius: 5px 5px 0 0;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .card_suggest_image_container img {
    width: 100%;
    height: 100%;
-   border-radius: 0.5rem 0.5rem 0 0;
+   border-radius: 5px 5px 0 0;
    transition: all 1.5s ease;
 }
 
@@ -57,25 +43,29 @@
 }
 
 .card_suggest_price {
-   color: var(--white);
-   font-weight: var(--font-weight-600);
-   border-radius: 1rem;
-   padding: 1rem;
-   background: var(--almost-black-nav-bg);
+   color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   padding: 10px;
+   background: hsl(0, 0%, 8%);
 
    position: absolute;
-   top: 2rem;
-   left: 2rem;
+   top: 20px;
+   left: 20px;
 }
 
 .card_suggest_read_more_btn {
    display: none;
-   color: var(--white);
-   padding: 1rem;
-   border-radius: 0.5rem;
-   background: var(--almost-black-nav-bg);
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   background: hsl(0, 0%, 8%);
    text-decoration: none;
    position: absolute;
+}
+
+.card_suggest_title {
+   font-weight: bolder;
 }
 
 .card_suggest_image_container:hover .card_suggest_read_more_btn {
@@ -83,15 +73,15 @@
    cursor: pointer;
 }
 
-@media (min-width: 670px) {
+@media (min-width: 576px) {
    .card_suggest_container {
       flex-direction: row;
       flex-wrap: wrap;
    }
 
    .card_suggest {
-      width: 30rem;
+      width: 300px;
    }
 }
 
-/*================= END OF YOU MAY ALSO LIKE =================*/
+/*================= END OF YOU MAY ALSO LIKE ================= */

@@ -8,80 +8,90 @@
 
       <link rel="stylesheet" href="./styles/header-footer.css" />
       <link rel="stylesheet" href="./styles/contact.css" />
-      <link rel="stylesheet" href="./styles/youlikes.css" />
+      <link rel="stylesheet" href="./styles/youlike.css" />
+
+      <!-- CSS only -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
    </head>
 
-   <body>
-      <div id="contact" class="contact_container">
-         <header class="contact_header">
-            <nav class="nav_bar">
-               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
+   <body class="bg-light">
+      <div id="contact" class="d-flex flex-column align-items-center w-100 contact_us_container">
+         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_contact_bg">
+            <nav class="d-flex justify-content-between align-items-center align-items-md-start position-fixed top-0 w-100 nav_bar_bg">
+               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="d-none" aria-label="burger checkbox" />
 
-               <div class="menu_logo_container">
+               <div class="position-relative w-100 d-flex menu_logo_container">
                   <div class="logo_container">
-                     <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
+                     <img src="./images/mylogo.png" class="w-100 ms-3 py-2 ms-lg-4 header_logo" alt="Travel & Tours Logo" />
                   </div>
 
                   <!-- /* menu container */ -->
-                  <div class="menu_container">
-                     <div class="overlay"></div>
+                  <div class="w-100 d-flex align-items-md-end me-lg-4 menu_container">
+                     <div class="w-50 d-md-none overlay"></div>
 
-                     <ul class="menu_dropdown">
-                        <li class="menu_item" id="home">
-                           <a href="./index.html"> Home </a>
+                     <ul class="d-md-flex align-items-md-center justify-content-md-end gap-md-1 w-100 list-type-none pt-5 pt-md-0 pe-5 pe-md-0 menu_dropdown">
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="home">
+                           <a href="./index.html" class="text-decoration-none fw-semibold"> Home </a>
                         </li>
-                        <li class="menu_item" id="special_offer">
-                           <a href="./special-offers.html"> Special Offer </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="special_offer">
+                           <a href="./special-offers.html" class="text-decoration-none fw-semibold"> Special Offer </a>
                         </li>
-                        <li class="menu_item" id="tour_packages">
-                           <a href="./destination.html"> Tour Packages </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="tour_packages">
+                           <a href="./destination.html" class="text-decoration-none fw-semibold"> Tour Packages </a>
                         </li>
-                        <li class="menu_item" id="contact_us">
-                           <a href="./contact.html"> Contact Us </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="contact_us">
+                           <a href="./contact.html" class="text-decoration-none fw-semibold"> Contact Us </a>
                         </li>
-                        <li class="menu_item" id="about_us">
-                           <a href="./about.html"> About Us </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="about_us">
+                           <a href="./about.html" class="text-decoration-none fw-semibold"> About Us </a>
                         </li>
                      </ul>
                   </div>
                </div>
 
-               <div class="burger_container">
-                  <label for="burger_checkbox" class="burger_label">
-                     <span class="burger_line line1"></span>
-                     <span class="burger_line line2"></span>
-                     <span class="burger_line line3"></span>
-                  </label>
-               </div>
+               <label for="burger_checkbox" class="position-absolute end-0 d-flex d-md-none flex-column gap-1 me-4 burger_label">
+                  <span class="burger_line line1"></span>
+                  <span class="burger_line line2"></span>
+                  <span class="burger_line line3"></span>
+               </label>
             </nav>
          </header>
 
-         <main class="main_contact_page">
+         <main class="d-flex flex-column gap-5 w-100 px-2 main_contact_page">
             <!-- /* contact us */ -->
-            <section id="contact" class="contact_us">
-               <h2 class="contact_title">CONTACT US</h2>
-               <div class="address_container">
-                  <div class="address">
+            <section id="contact" class="w-100 px-2 px-lg-4 rounded contact_us">
+               <h2 class="text-center text-white fw-bold p-4 contact_title">GET IN TOUCH</h2>
+
+               <div class="d-flex flex-column flex-md-row gap-3 address_container">
+                  <div class="d-flex flex-column gap-4 w-100 p-5 border rounded address">
                      <div class="full_address">
-                        <strong> Address: </strong>
-                        <p>Morondo St</p>
-                        <p>Brgy Cabaducan East</p>
-                        <p>Nampicuan, Nueva Ecija 3116</p>
+                        <strong class="text-white"> Address: </strong>
+                        <div class="text-white ps-2">Morondo St</div>
+                        <div class="text-white ps-2">Brgy Cabaducan East</div>
+                        <div class="text-white ps-2">Nampicuan, Nueva Ecija 3116</div>
                      </div>
 
-                     <div class="contact_info">
-                        <div class="phone">
-                           <img src="./images/icon-phone-black.svg" alt="Phone" />
-                           <p>+6312345678</p>
+                     <div class="d-flex flex-column gap-2 contact_info">
+                        <div class="d-flex align-items-center gap-2 phone_icon">
+                           <img src="./images/icon-phone.svg" alt="Phone" />
+                           <div class="text-white">+6312345678</div>
                         </div>
-                        <div class="email">
-                           <img src="./images/icon-email-black.svg" alt="Email" />
-                           <p>email@email.com</p>
+
+                        <div class="d-flex align-items-center gap-2 email_icon">
+                           <img src="./images/icon-email.svg" alt="Email" />
+                           <div class="text-white">email@email.com</div>
                         </div>
                      </div>
                   </div>
 
-                  <form action="" class="form_contact">
+                  <form action="" class="w-100 d-flex flex-column p-3 p-lg-5 gap-3 border text-white rounded form_contact">
                      <p class="form_title">For inquiries, fillup the form below:</p>
                      <div class="name_container">
                         <label for="name">Full Name</label>
@@ -114,8 +124,8 @@
                   </form>
                </div>
 
-               <div class="maps">
-                  <h2 class="map_location">OUR LOCATION</h2>
+               <div class="w-100 maps">
+                  <h2 class="text-center text-white fw-bold pt-5 map_location">OUR LOCATION</h2>
                   <iframe
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.155236279639!2d120.63988165787033!3d15.734706578974443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7149f07e07f7def1!2zMTXCsDQ0JzA0LjkiTiAxMjDCsDM4JzI3LjUiRQ!5e0!3m2!1sen!2sph!4v1657756967228!5m2!1sen!2sph"
                      width="600"
@@ -124,14 +134,15 @@
                      allowfullscreen=""
                      loading="lazy"
                      referrerpolicy="no-referrer-when-downgrade"
+                     class="w-100 rounded"
                   ></iframe>
                </div>
             </section>
 
             <!-- /* you may also like */ -->
-            <section class="tour_suggestions">
-               <div class="tour_suggestions_container">
-                  <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
+            <section class="d-flex flex-column w-100 mb-5 tour_suggestions">
+               <div class="d-flex flex-column tour_suggestions_container">
+                  <h2 class="fw-bold tour_suggestions_title">YOU MAY ALSO LIKE</h2>
 
                   <div class="card_suggest_container">
                      <!-- /* puerto princesa */ -->
@@ -198,70 +209,84 @@
             </section>
          </main>
 
-         <footer>
-            <div class="footer_content_container">
+         <footer class="d-flex flex-column px-2">
+            <div class="d-flex flex-column-reverse flex-sm-row p-md-3 p-lg-5 gap-5 footer_content_container">
                <div class="contacts_media_container">
-                  <div class="footer_para_text_container">
+                  <div class="d-flex flex-column gap-4 footer_para_text_container">
                      <div class="footer_logo_container">
                         <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
                      </div>
 
-                     <p class="footer_para_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                     <p class="text-white footer_para_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+                     </p>
                   </div>
 
-                  <ul class="social_media_container">
-                     <li>
+                  <ul class="d-flex gap-3 list-style-none social_media_container ps-0">
+                     <li class="list-group">
                         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                           <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                           <i class="bi bi-facebook icon facebook"></i>
                         </a>
                      </li>
-                     <li>
-                        <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
+                     <li class="list-group">
+                        <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-twitter icon twitter"></i>
+                        </a>
                      </li>
 
-                     <li>
-                        <img src="./images/twitter.svg" alt="Twitter" class="icon icon_twitter" />
+                     <li class="list-group">
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-instagram icon instagram"></i>
+                        </a>
                      </li>
 
-                     <li>
-                        <img src="./images/youtube.svg" alt="Youtube" class="icon icon_youtube" />
+                     <li class="list-group">
+                        <a href="https://youtube.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-youtube icon youtube"></i>
+                        </a>
                      </li>
                   </ul>
                </div>
 
                <div class="newsletter_container">
                   <div class="newsletter_title">
-                     <h2 class="newsletter_text">Newsletter</h2>
+                     <h2 class="text-white fw-bold newsletter_text">NEWSLETTER</h2>
 
-                     <p class="newsletter_para_text">
+                     <p class="text-white newsletter_para_text">
                         To recieve updates on your favorite destination, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
                      </p>
                   </div>
 
-                  <form class="subscribe_btn_container">
-                     <input type="email" class="subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
-                     <div class="warning">Check your email please..</div>
+                  <form class="d-flex flex-column flex-sm-row gap-2 subscribe_btn_container">
+                     <input type="email" class="border-0 rounded w-100 p-2 subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
+                     <div class="d-none warning">Check your email please..</div>
 
-                     <input type="submit" class="subscribe_btn" id="subscribe_btn" value="Subscribe" aria-label="Subscribe Button" />
+                     <input
+                        type="submit"
+                        class="border-0 rounded p-2 align-self-end text-white fw-semibold subscribe_btn"
+                        id="subscribe_btn"
+                        value="Subscribe"
+                        aria-label="Subscribe Button"
+                     />
                   </form>
                </div>
             </div>
 
-            <ul class="footer_menu_container">
-               <li class="footer_menu_item" id="home">
-                  <a href="./index.html"> Home </a>
+            <ul class="d-flex justify-content-center align-items-center gap-2 gap-sm-5 list-style-none ps-0 footer_menu_container">
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_home">
+                  <a href="./index.html" class="text-decoration-none text-white"> Home </a>
                </li>
-               <li class="footer_menu_item" id="special_offer">
-                  <a href="./special-offers.html"> Offers </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_special_offer">
+                  <a href="./special-offers.html" class="text-decoration-none text-white"> Offers </a>
                </li>
-               <li class="footer_menu_item" id="tour_packages">
-                  <a href="./destination.html"> Packages </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_tour_packages">
+                  <a href="./destination.html" class="text-decoration-none text-white"> Packages </a>
                </li>
-               <li class="footer_menu_item" id="contact_us">
-                  <a href="./contact.html"> Contact </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_contact_us">
+                  <a href="./contact.html" class="text-decoration-none text-white"> Contact </a>
                </li>
-               <li class="footer_menu_item" id="about_us">
-                  <a href="./about.html"> About </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_about_us">
+                  <a href="./about.html" class="text-decoration-none text-white"> About </a>
                </li>
             </ul>
 
@@ -271,5 +296,14 @@
             </div>
          </footer>
       </div>
+
+      <script src="./scripts/index.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+      ></script>
    </body>
 </html>

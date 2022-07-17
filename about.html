@@ -8,59 +8,67 @@
 
       <link rel="stylesheet" href="./styles/header-footer.css" />
       <link rel="stylesheet" href="./styles/about.css" />
-      <link rel="stylesheet" href="./styles/youlikes.css" />
-   </head>
-   <body>
-      <div id="home" class="about_container">
-         <header class="about_header">
-            <nav class="nav_bar">
-               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="burger_checkbox" aria-label="burger checkbox" />
+      <link rel="stylesheet" href="./styles/youlike.css" />
 
-               <div class="menu_logo_container">
+      <!-- CSS only -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body class="bg-light">
+      <div id="about" class="d-flex flex-column align-items-center w-100 about_container">
+         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_about_bg">
+            <nav class="d-flex justify-content-between align-items-center align-items-md-start position-fixed top-0 w-100 nav_bar_bg">
+               <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="d-none" aria-label="burger checkbox" />
+
+               <div class="position-relative w-100 d-flex menu_logo_container">
                   <div class="logo_container">
-                     <img src="./images/mylogo.png" class="header_logo" alt="Travel & Tours Logo" />
+                     <img src="./images/mylogo.png" class="w-100 ms-3 py-2 ms-lg-4 header_logo" alt="Travel & Tours Logo" />
                   </div>
 
                   <!-- /* menu container */ -->
-                  <div class="menu_container">
-                     <div class="overlay"></div>
+                  <div class="w-100 d-flex align-items-md-end me-lg-4 menu_container">
+                     <div class="w-50 d-md-none overlay"></div>
 
-                     <ul class="menu_dropdown">
-                        <li class="menu_item" id="home">
-                           <a href="./index.html"> Home </a>
+                     <ul class="d-md-flex align-items-md-center justify-content-md-end gap-md-1 w-100 list-type-none pt-5 pt-md-0 pe-5 pe-md-0 menu_dropdown">
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="home">
+                           <a href="./index.html" class="text-decoration-none fw-semibold"> Home </a>
                         </li>
-                        <li class="menu_item" id="special_offer">
-                           <a href="./special-offers.html"> Special Offer </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="special_offer">
+                           <a href="./special-offers.html" class="text-decoration-none fw-semibold"> Special Offer </a>
                         </li>
-                        <li class="menu_item" id="tour_packages">
-                           <a href="./destination.html"> Tour Packages </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="tour_packages">
+                           <a href="./destination.html" class="text-decoration-none fw-semibold"> Tour Packages </a>
                         </li>
-                        <li class="menu_item" id="contact_us">
-                           <a href="./contact.html"> Contact Us </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="contact_us">
+                           <a href="./contact.html" class="text-decoration-none fw-semibold"> Contact Us </a>
                         </li>
-                        <li class="menu_item" id="about_us">
-                           <a href="./about.html"> About Us </a>
+                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="about_us">
+                           <a href="./about.html" class="text-decoration-none fw-semibold"> About Us </a>
                         </li>
                      </ul>
                   </div>
                </div>
 
-               <div class="burger_container">
-                  <label for="burger_checkbox" class="burger_label">
-                     <span class="burger_line line1"></span>
-                     <span class="burger_line line2"></span>
-                     <span class="burger_line line3"></span>
-                  </label>
-               </div>
+               <label for="burger_checkbox" class="position-absolute end-0 d-flex d-md-none flex-column gap-1 me-4 burger_label">
+                  <span class="burger_line line1"></span>
+                  <span class="burger_line line2"></span>
+                  <span class="burger_line line3"></span>
+               </label>
             </nav>
          </header>
 
-         <main class="main_about">
-            <section class="about_company">
-               <div class="my_company">
-                  <div class="history">
-                     <h2>About Us</h2>
-                     <p class="company_history_text">
+         <main class="d-flex flex-column gap-5 w-100 px-2 main_about">
+            <section class="d-flex flex-column gap-4 w-100 about_company">
+               <div class="d-flex flex-column flex-md-row gap-1 px-2 py-md-4 p-lg-5 my_company">
+                  <div class="w-100 history">
+                     <h2 class="fw-bold text-center">ABOUT US</h2>
+                     <p class="mt-lg-4 company_history_text">
                         Bluejays Travel and Tours is newly established local tour providers in Cavinti, Laguna. It was founded on August 1, 2017 as start-up travel and tour agency
                         with add-on travel-related assistance services. And one of affiliates member of Sarap Mag Biyahe (SMB) Travel and Tours. Bluejays is a group of friends
                         (barkadahan) name in town of Cavinti were the founder is member. He just borrowed the name and used as his business name. The founder loves to travel and
@@ -70,9 +78,9 @@
                      </p>
                   </div>
 
-                  <div class="accreditation_logo">
-                     <h2>Accreditations & Membership</h2>
-                     <div class="member_logo">
+                  <div class="w-100 accreditation_logo">
+                     <h2 class="fw-bold text-center">ACCREDITAIONS & MEMBERSHIP</h2>
+                     <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-lg-4 member_logo">
                         <img src="./images/accreditation/about_dot.jpg" alt="DOT" />
                         <img src="./images/accreditation/about_iata.jpg" alt="IATA" />
                         <img src="./images/accreditation/about_ptaa.jpg" alt="PTAA" />
@@ -84,9 +92,10 @@
                   </div>
                </div>
 
-               <div class="company_services">
-                  <h2 class="ourservices">Our Services</h2>
-                  <div class="offerservices">
+               <div class="d-flex flex-column align-items-center gap-3 gap-lg-5 w-100 p-4 company_services">
+                  <h2 class="fw-bold text-center ourservices">OUR SERVICES</h2>
+
+                  <div class="d-flex flex-column flex-md-row flex-md-wrap justify-content-md-center gap-md-3 gap-lg-6 offerservices">
                      <div class="services_items">
                         <div class="services_items_img ticketing_img">
                            <img src="./images/airplane.svg" alt="Plane" />
@@ -133,10 +142,10 @@
                   </div>
                </div>
 
-               <div class="accept_payment">
-                  <h2 class="payment">WE ACCEPT</h2>
+               <div class="d-flex flex-column align-items-center w-100 p-4 p-md-5 accept_payment">
+                  <h2 class="fw-bold text-center payment">WE ACCEPT</h2>
                   <div class="payment_container">
-                     <div class="payment_logo">
+                     <div class="d-flex justify-content-center gap-2 flex-wrap payment_logo">
                         <img src="./images/mode-payment/about_jcb.jpg" alt="JCB" />
                         <img src="./images/mode-payment/about_mastercard.jpg" alt="MASTERCARD" />
                         <img src="./images/mode-payment/about_paypal.jpg" alt="PAYPAL" />
@@ -147,9 +156,9 @@
             </section>
 
             <!-- /* you may also like */ -->
-            <section class="tour_suggestions">
-               <div class="tour_suggestions_container">
-                  <h2 class="tour_suggestions_title">YOU MAY ALSO LIKE</h2>
+            <section class="d-flex flex-column w-100 mb-5 tour_suggestions">
+               <div class="d-flex flex-column tour_suggestions_container">
+                  <h2 class="fw-bold tour_suggestions_title">YOU MAY ALSO LIKE</h2>
 
                   <div class="card_suggest_container">
                      <!-- /* puerto princesa */ -->
@@ -216,70 +225,84 @@
             </section>
          </main>
 
-         <footer>
-            <div class="footer_content_container">
+         <footer class="d-flex flex-column px-2">
+            <div class="d-flex flex-column-reverse flex-sm-row p-md-3 p-lg-5 gap-5 footer_content_container">
                <div class="contacts_media_container">
-                  <div class="footer_para_text_container">
+                  <div class="d-flex flex-column gap-4 footer_para_text_container">
                      <div class="footer_logo_container">
                         <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
                      </div>
 
-                     <p class="footer_para_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                     <p class="text-white footer_para_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+                     </p>
                   </div>
 
-                  <ul class="social_media_container">
-                     <li>
+                  <ul class="d-flex gap-3 list-style-none social_media_container ps-0">
+                     <li class="list-group">
                         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                           <img src="./images/facebook.svg" alt="Facebook" class="icon icon_fb" />
+                           <i class="bi bi-facebook icon facebook"></i>
                         </a>
                      </li>
-                     <li>
-                        <img src="./images/instagram.svg" alt="Instagram" class="icon icon_instagram" />
+                     <li class="list-group">
+                        <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-twitter icon twitter"></i>
+                        </a>
                      </li>
 
-                     <li>
-                        <img src="./images/twitter.svg" alt="Twitter" class="icon icon_twitter" />
+                     <li class="list-group">
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-instagram icon instagram"></i>
+                        </a>
                      </li>
 
-                     <li>
-                        <img src="./images/youtube.svg" alt="Youtube" class="icon icon_youtube" />
+                     <li class="list-group">
+                        <a href="https://youtube.com" target="_blank" rel="noreferrer noopener">
+                           <i class="bi bi-youtube icon youtube"></i>
+                        </a>
                      </li>
                   </ul>
                </div>
 
                <div class="newsletter_container">
                   <div class="newsletter_title">
-                     <h2 class="newsletter_text">Newsletter</h2>
+                     <h2 class="text-white fw-bold newsletter_text">NEWSLETTER</h2>
 
-                     <p class="newsletter_para_text">
+                     <p class="text-white newsletter_para_text">
                         To recieve updates on your favorite destination, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
                      </p>
                   </div>
 
-                  <form class="subscribe_btn_container">
-                     <input type="email" class="subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
-                     <div class="warning">Check your email please..</div>
+                  <form class="d-flex flex-column flex-sm-row gap-2 subscribe_btn_container">
+                     <input type="email" class="border-0 rounded w-100 p-2 subscribe_email" id="subscribe_email" required aria-label="Subscribe Text input" />
+                     <div class="d-none warning">Check your email please..</div>
 
-                     <input type="submit" class="subscribe_btn" id="subscribe_btn" value="Subscribe" aria-label="Subscribe Button" />
+                     <input
+                        type="submit"
+                        class="border-0 rounded p-2 align-self-end text-white fw-semibold subscribe_btn"
+                        id="subscribe_btn"
+                        value="Subscribe"
+                        aria-label="Subscribe Button"
+                     />
                   </form>
                </div>
             </div>
 
-            <ul class="footer_menu_container">
-               <li class="footer_menu_item" id="home">
-                  <a href="./index.html"> Home </a>
+            <ul class="d-flex justify-content-center align-items-center gap-2 gap-sm-5 list-style-none ps-0 footer_menu_container">
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_home">
+                  <a href="./index.html" class="text-decoration-none text-white"> Home </a>
                </li>
-               <li class="footer_menu_item" id="special_offer">
-                  <a href="./special-offers.html"> Offers </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_special_offer">
+                  <a href="./special-offers.html" class="text-decoration-none text-white"> Offers </a>
                </li>
-               <li class="footer_menu_item" id="tour_packages">
-                  <a href="./destination.html"> Packages </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_tour_packages">
+                  <a href="./destination.html" class="text-decoration-none text-white"> Packages </a>
                </li>
-               <li class="footer_menu_item" id="contact_us">
-                  <a href="./contact.html"> Contact </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_contact_us">
+                  <a href="./contact.html" class="text-decoration-none text-white"> Contact </a>
                </li>
-               <li class="footer_menu_item" id="about_us">
-                  <a href="./about.html"> About </a>
+               <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_about_us">
+                  <a href="./about.html" class="text-decoration-none text-white"> About </a>
                </li>
             </ul>
 
@@ -289,5 +312,14 @@
             </div>
          </footer>
       </div>
+
+      <script src="./scripts/index.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+      ></script>
    </body>
 </html>

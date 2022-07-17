@@ -17,7 +17,7 @@ This is my Major Project I : Multi-page Responsive Website in bootcamp.
 
 ### The Project
 
-The project is about to build my first website. Individual project.
+The project is about to build my first website using bootstrap. Individual project.
 
 ### Links
 
@@ -28,3 +28,4 @@ The project is about to build my first website. Individual project.
 -  HTML
 -  CSS
 -  Flexbox
+-  Bootstrap
