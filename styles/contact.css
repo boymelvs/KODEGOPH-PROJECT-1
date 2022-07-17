@@ -25,6 +25,15 @@ textarea {
    outline: none;
 }
 
+#submit_btn {
+   background: hsl(14, 100%, 57%);
+   transition: all 300ms ease-in-out;
+}
+
+#submit_btn:hover {
+   background: hsl(36, 71%, 53%);
+}
+
 @media (min-width: 992px) {
    .main_contact_page {
       margin-top: 25px;

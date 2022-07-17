@@ -71,8 +71,11 @@
 
                <div class="d-flex flex-column flex-md-row gap-3 address_container">
                   <div class="d-flex flex-column gap-4 w-100 p-5 border rounded address">
-                     <div class="full_address">
-                        <strong class="text-white"> Address: </strong>
+                     <div class="office_time">
+                        <div class="text-white fw-bold">BOOK ONLINE OR CALL US</div>
+                        <div class="text-white ps-2">MONDAY TO FRIDAY (9:00 AM - 6:00 PM)</div>
+                        <div class="text-white ps-2">SATURDAY (9:00 AM - 1:00 PM)</div>
+                        <div class="text-white fw-bold mt-3">Address:</div>
                         <div class="text-white ps-2">Morondo St</div>
                         <div class="text-white ps-2">Brgy Cabaducan East</div>
                         <div class="text-white ps-2">Nampicuan, Nueva Ecija 3116</div>
@@ -118,8 +121,8 @@
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                      </div>
 
-                     <div class="submit_btn_container">
-                        <input type="submit" name="submit_btn" id="submit_btn" class="submit_btn" aria-label="submit_btn" />
+                     <div class="mx-auto submit_btn_container">
+                        <input type="submit" name="submit_btn" id="submit_btn" class="px-5 py-2 text-white fw-semibold border-0 rounded submit_btn" aria-label="submit_btn" />
                      </div>
                   </form>
                </div>
@@ -210,16 +213,27 @@
          </main>
 
          <footer class="d-flex flex-column px-2">
-            <div class="d-flex flex-column-reverse flex-sm-row p-md-3 p-lg-5 gap-5 footer_content_container">
-               <div class="contacts_media_container">
-                  <div class="d-flex flex-column gap-4 footer_para_text_container">
+            <div class="d-flex flex-column-reverse flex-sm-row p-md-3 p-lg-5 gap-2 footer_content_container">
+               <div class="w-100 d-flex flex-column gap-3 contacts_media_container">
+                  <div class="d-flex flex-column footer_para_text_container">
                      <div class="footer_logo_container">
                         <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
                      </div>
 
-                     <p class="text-white footer_para_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-                     </p>
+                     <div class="text-white d-flex flex-column flex-md-row gap-3 mt-4">
+                        <div class="footer_full_address">
+                           <div class="text-white fw-bold">ADDRESS:</div>
+                           <div class="text-white ps-2">Morondo St</div>
+                           <div class="text-white ps-2">Brgy Cabaducan East</div>
+                           <div class="text-white ps-2">Nampicuan, Nueva Ecija 3116</div>
+                        </div>
+
+                        <div class="footer_office_time">
+                           <div class="text-white fw-bold">BOOK ONLINE OR CALL US:</div>
+                           <div class="text-white ps-2">MONDAY TO FRIDAY (9:00 AM - 6:00 PM)</div>
+                           <div class="text-white ps-2">SATURDAY (9:00 AM - 1:00 PM)</div>
+                        </div>
+                     </div>
                   </div>
 
                   <ul class="d-flex gap-3 list-style-none social_media_container ps-0">
@@ -248,7 +262,7 @@
                   </ul>
                </div>
 
-               <div class="newsletter_container">
+               <div class="w-100 newsletter_container">
                   <div class="newsletter_title">
                      <h2 class="text-white fw-bold newsletter_text">NEWSLETTER</h2>
 

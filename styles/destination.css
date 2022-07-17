@@ -86,7 +86,7 @@
    border: none;
    border-radius: 5px;
    background: hsl(14, 100%, 57%);
-   font-weight: bold;
+   font-weight: 600;
    width: 100%;
    transition: all 350ms ease-in-out;
 }
