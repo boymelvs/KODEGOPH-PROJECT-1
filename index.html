@@ -22,10 +22,12 @@
    <body class="bg-light">
       <div id="home" class="d-flex flex-column align-items-center w-100">
          <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_bg">
-            <nav class="d-flex justify-content-between align-items-center align-items-md-start position-fixed top-0 w-100 nav_bar_bg">
+            <nav class="d-flex justify-content-between align-items-center position-fixed top-0 w-100 nav_bar_bg">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="d-none" aria-label="burger checkbox" />
 
-               <div class="position-relative w-100 d-flex menu_logo_container">
+               <input type="checkbox" name="search_checkbox" id="search_checkbox" class="d-none" aria-label="search checkbox" />
+
+               <div class="position-relative w-100 d-flex justify-content-between menu_logo_container">
                   <div class="logo_container">
                      <img src="./images/mylogo.png" class="w-100 ms-3 py-2 ms-lg-4 header_logo" alt="Travel & Tours Logo" />
                   </div>
@@ -35,30 +37,40 @@
                      <div class="w-50 d-md-none overlay"></div>
 
                      <ul class="d-md-flex align-items-md-center justify-content-md-end gap-md-1 w-100 list-type-none pt-5 pt-md-0 pe-5 pe-md-0 menu_dropdown">
-                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="home">
+                        <li class="list-group-item px-2 py-2 rounded menu_item" id="home">
                            <a href="#" class="text-decoration-none fw-semibold"> Home </a>
                         </li>
-                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="special_offer">
+                        <li class="list-group-item px-2 py-2 rounded menu_item" id="special_offer">
                            <a href="#offers" class="text-decoration-none fw-semibold"> Special Offer </a>
                         </li>
-                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="tour_packages">
+                        <li class="list-group-item px-2 py-2 rounded menu_item" id="tour_packages">
                            <a href="#tours" class="text-decoration-none fw-semibold"> Tour Packages </a>
                         </li>
-                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="contact_us">
+                        <li class="list-group-item px-2 py-2 rounded menu_item" id="contact_us">
                            <a href="#contact" class="text-decoration-none fw-semibold"> Contact Us </a>
                         </li>
-                        <li class="list-group-item px-2 py-1 px-2 py-1 rounded menu_item" id="about_us">
+                        <li class="list-group-item px-2 py-2 rounded menu_item" id="about_us">
                            <a href="#about" class="text-decoration-none fw-semibold"> About Us </a>
                         </li>
                      </ul>
                   </div>
                </div>
 
-               <label for="burger_checkbox" class="position-absolute end-0 d-flex d-md-none flex-column gap-1 me-4 burger_label">
-                  <span class="burger_line line1"></span>
-                  <span class="burger_line line2"></span>
-                  <span class="burger_line line3"></span>
-               </label>
+               <div class="d-flex align-items-center justify-content-center burger_search_container">
+                  <form action="">
+                     <input type="text" name="search" id="search" class="p-1 rounded search" placeholder="I'm looking for..." />
+                  </form>
+
+                  <label for="search_checkbox" class="ms-2 search_label">
+                     <img src="./images/search_white.svg" alt="Search" class="w-100 search_icon search_white" />
+                  </label>
+
+                  <label for="burger_checkbox" class="d-flex d-md-none ms-4 flex-column gap-1 burger_label">
+                     <span class="burger_line line1"></span>
+                     <span class="burger_line line2"></span>
+                     <span class="burger_line line3"></span>
+                  </label>
+               </div>
             </nav>
 
             <h1 class="p-4 pxl-6 text-white header_text">We're proud to be a Nampicuan based travel agency. Find great deals on the places you want to go.</h1>
@@ -450,19 +462,19 @@
 
             <ul class="d-flex justify-content-center align-items-center gap-2 gap-sm-5 list-style-none ps-0 footer_menu_container">
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_home">
-                  <a href="./index.html" class="text-decoration-none text-white"> Home </a>
+                  <a href="#home" class="text-decoration-none text-white"> Home </a>
                </li>
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_special_offer">
-                  <a href="./special-offers.html" class="text-decoration-none text-white"> Offers </a>
+                  <a href="#offers" class="text-decoration-none text-white"> Offers </a>
                </li>
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_tour_packages">
-                  <a href="./destination.html" class="text-decoration-none text-white"> Packages </a>
+                  <a href="#tours" class="text-decoration-none text-white"> Packages </a>
                </li>
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_contact_us">
-                  <a href="./contact.html" class="text-decoration-none text-white"> Contact </a>
+                  <a href="#contact" class="text-decoration-none text-white"> Contact </a>
                </li>
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_about_us">
-                  <a href="./about.html" class="text-decoration-none text-white"> About </a>
+                  <a href="#about" class="text-decoration-none text-white"> About </a>
                </li>
             </ul>
 
