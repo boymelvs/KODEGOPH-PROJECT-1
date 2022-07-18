@@ -64,6 +64,11 @@
    transition: position 300ms ease-in-out;
 }
 
+#search_checkbox:checked ~ .burger_search_container > .burger_label {
+   display: none !important;
+   border: 1px solid red;
+}
+
 #search_checkbox:checked ~ .burger_search_container > form .search {
    visibility: visible;
    position: unset;
