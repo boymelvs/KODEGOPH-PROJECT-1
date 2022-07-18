@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 .header_bg {
    background-image: url("../images/tours/boracay-beach.jpg");
    background-repeat: no-repeat;
