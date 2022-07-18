@@ -38,10 +38,13 @@
    background: white;
 }
 
+.menu_item a {
+   color: black;
+}
+
 .menu_item:hover {
-   color: white;
-   background: hsl(36, 71%, 53%);
    cursor: pointer;
+   background: hsl(36, 71%, 53%);
 }
 
 .menu_item:hover a {
@@ -66,7 +69,6 @@
 
 #search_checkbox:checked ~ .burger_search_container > .burger_label {
    display: none !important;
-   border: 1px solid red;
 }
 
 #search_checkbox:checked ~ .burger_search_container > form .search {
@@ -260,3 +262,7 @@ footer {
    color: white;
 }
 /*================= END OF FOOTER =================*/
+
+.red {
+   border: 1px solid red;
+}
