@@ -94,11 +94,6 @@
    cursor: pointer;
 }
 
-.card_special_offer_select:hover {
-   transform: scale(1.1);
-   cursor: pointer;
-}
-
 @media (min-width: 450px) {
    .special_offer_all_card {
       padding: 30px 0;
@@ -121,5 +116,12 @@
 
    .card_special_offer_container {
       width: 350px;
+   }
+}
+
+@media (min-width: 992px) {
+   .card_special_offer_select:hover {
+      transform: scale(1.1);
+      cursor: pointer;
    }
 }
