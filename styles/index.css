@@ -148,6 +148,8 @@
 .name,
 .email,
 .phone,
+.adult,
+.child,
 .subject,
 textarea {
    width: 100%;
