@@ -21,7 +21,7 @@ The project is about to build my first website using bootstrap.
 
 ### Links
 
--  Live Site URL: [KODEGOPH-PROJECT-1](https://boymelvs.github.io/KODEGOPH-PROJECT-1)
+-  Live Site URL: [KODEGOPH-PROJECT-1](https://boymelvs.github.io/travel-and-tours)
 
 ### Built with
 
