@@ -7,10 +7,6 @@
    color: white;
 }
 
-.special_offer_container {
-   max-width: 1440px;
-}
-
 .header_special_offer_bg {
    max-width: 1440px;
 }
@@ -119,8 +115,8 @@
       margin-top: 15px;
    }
 
-   .special_offer_content_container {
-      padding: 60px;
+   .special_offer_all_card {
+      padding: 90px 0;
    }
 
    .card_special_offer_container {

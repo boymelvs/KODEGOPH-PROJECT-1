@@ -64,6 +64,10 @@
    font-weight: bold;
 }
 
+.services_title p {
+   width: 100%;
+}
+
 .my_company,
 .company_services,
 .accept_payment {
@@ -83,12 +87,16 @@
    }
 
    .services_title p {
-      width: 400px;
+      width: 250px;
    }
 }
 
 @media (min-width: 992px) {
    .main_about {
       margin-top: -10px;
+   }
+
+   .services_title p {
+      width: 400px;
    }
 }
