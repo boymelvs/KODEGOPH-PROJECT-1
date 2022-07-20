@@ -1,3 +1,12 @@
+#special_offer,
+#footer_special_offer {
+   background: hsl(36, 71%, 53%);
+}
+
+#special_offer a {
+   color: white;
+}
+
 .special_offer_container {
    max-width: 1440px;
 }

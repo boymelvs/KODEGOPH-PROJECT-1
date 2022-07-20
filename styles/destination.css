@@ -2,6 +2,15 @@
    max-width: 1440px;
 }
 
+#tour_packages,
+#footer_tour_packages {
+   background: hsl(36, 71%, 53%);
+}
+
+#tour_packages a {
+   color: white;
+}
+
 .main_destination {
    max-width: 1440px;
    margin-top: 60px;

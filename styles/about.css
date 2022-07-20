@@ -7,6 +7,15 @@
    margin-top: 65px;
 }
 
+#about_us,
+#footer_about_us {
+   background: hsl(36, 71%, 53%);
+}
+
+#about_us a {
+   color: white;
+}
+
 .history p {
    text-align: justify;
 }

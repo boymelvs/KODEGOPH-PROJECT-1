@@ -1,3 +1,13 @@
+#homes,
+#footer_home {
+   background: hsl(36, 71%, 53%);
+   color: white;
+}
+
+#homes a {
+   color: white;
+}
+
 .special_offer_container {
    max-width: 1440px;
    background: hsl(0, 0%, 49%);
