@@ -1,13 +1,3 @@
-#contact_us,
-#footer_contact_us {
-   background: hsl(36, 71%, 53%);
-}
-
-#contact_us a {
-   color: white;
-}
-
-.contact_us_container,
 .header_contact_bg {
    max-width: 1440px;
 }
@@ -15,6 +5,15 @@
 .main_contact_page {
    margin-top: 65px;
    max-width: 1440px;
+}
+
+#contact_us,
+#footer_contact_us {
+   background: hsl(36, 71%, 53%);
+}
+
+#contact_us a {
+   color: white;
 }
 
 .contact_us {
