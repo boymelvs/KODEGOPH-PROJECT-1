@@ -107,8 +107,8 @@
    background: rgb(20, 20, 20, 0.8);
 
    position: absolute;
-   top: 20px;
-   left: 20px;
+   top: 10px;
+   left: 10px;
 }
 
 .read_more_btn {
@@ -118,6 +118,10 @@
    background: rgb(20, 20, 20, 0.8);
    text-decoration: none;
    position: absolute;
+}
+
+.read_more_btn:hover {
+   text-decoration: underline;
 }
 
 .card_image_container:hover > .read_more_btn {
