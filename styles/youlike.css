@@ -22,7 +22,7 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 230px;
+   height: 270px;
 
    position: relative;
    overflow: hidden;
@@ -85,7 +85,7 @@
    }
 
    .card_suggest {
-      width: 300px;
+      width: 320px;
    }
 }
 
