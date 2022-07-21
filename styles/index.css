@@ -234,12 +234,6 @@ textarea {
 }
 
 @media (min-width: 576px) {
-   /* .services_container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-   } */
-
    .services {
       width: 162px;
    }

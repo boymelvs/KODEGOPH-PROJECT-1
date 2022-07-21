@@ -22,7 +22,7 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 200px;
+   height: 230px;
 
    position: relative;
    overflow: hidden;
@@ -64,12 +64,17 @@
    position: absolute;
 }
 
+.card_suggest_read_more_btn:hover {
+   text-decoration: underline;
+}
+
 .card_suggest_title {
    font-weight: bolder;
 }
 
 .card_suggest_image_container:hover .card_suggest_read_more_btn {
    display: block;
+   color: white;
    cursor: pointer;
 }
 

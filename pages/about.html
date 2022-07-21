@@ -6,10 +6,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Travel & Tours</title>
 
-      <link rel="icon" type="image/png" sizes="32x32" href="./images/faviconlogo.png" />
-      <link rel="stylesheet" href="./styles/header-footer.css" />
-      <link rel="stylesheet" href="./styles/special-offer.css" />
-      <link rel="stylesheet" href="./styles/youlike.css" />
+      <link rel="icon" type="image/png" sizes="32x32" href="../images/faviconlogo.png" />
+      <link rel="stylesheet" href="../styles/header-footer.css" />
+      <link rel="stylesheet" href="../styles/about.css" />
+      <link rel="stylesheet" href="../styles/youlike.css" />
 
       <!-- CSS only -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
@@ -21,10 +21,9 @@
          crossorigin="anonymous"
       />
    </head>
-
    <body class="bg-light">
       <div id="about" class="d-flex flex-column align-items-center w-100 about_container">
-         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_special_offer_bg">
+         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_about_bg">
             <nav class="d-flex justify-content-between align-items-center position-fixed top-0 w-100 nav_bar_bg">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="d-none" aria-label="burger checkbox" />
 
@@ -32,7 +31,7 @@
 
                <div class="position-relative w-100 d-flex justify-content-between menu_logo_container">
                   <div class="logo_container">
-                     <img src="./images/mylogo.png" class="w-100 ms-3 py-2 ms-lg-4 header_logo" alt="Travel & Tours Logo" />
+                     <img src="../images/mylogo.png" class="w-100 ms-3 py-2 ms-lg-4 header_logo" alt="Travel & Tours Logo" />
                   </div>
 
                   <!-- /* menu container */ -->
@@ -41,7 +40,7 @@
 
                      <ul class="d-md-flex align-items-md-center justify-content-md-end gap-md-1 w-100 list-type-none pt-5 pt-md-0 pe-5 pe-md-0 menu_dropdown">
                         <li class="list-group-item px-2 py-1 rounded menu_item" id="home">
-                           <a href="./index.html" class="text-decoration-none fw-semibold"> Home </a>
+                           <a href="../index.html" class="text-decoration-none fw-semibold"> Home </a>
                         </li>
                         <li class="list-group-item px-2 py-1 rounded menu_item" id="special_offer">
                            <a href="./special-offers.html" class="text-decoration-none fw-semibold"> Special Offer </a>
@@ -65,7 +64,7 @@
                   </form>
 
                   <label for="search_checkbox" class="ms-1 search_label">
-                     <img src="./images/search_white.svg" alt="Search" class="w-100 search_icon search_white" />
+                     <img src="../images/search_white.svg" alt="Search" class="w-100 search_icon search_white" />
                   </label>
 
                   <label for="burger_checkbox" class="d-flex d-md-none ms-2 flex-column gap-1 burger_label">
@@ -77,149 +76,101 @@
             </nav>
          </header>
 
-         <main class="d-flex flex-column gap-5 px-2 w-100 main_special_offer">
-            <section class="w-100 special_offer_content_container">
-               <h2 class="text-center fw-bold py-3 special_offer_title">OUR MOST POPULAR TOUR PACKAGES</h2>
+         <main class="d-flex flex-column gap-5 w-100 px-2 main_about">
+            <section class="d-flex flex-column gap-3 w-100 about_company">
+               <div class="d-flex flex-column flex-md-row gap-1 px-2 px-md-3 py-md-4 py-lg-5 my_company">
+                  <div class="w-100 history">
+                     <h2 class="fw-bold text-center py-3">ABOUT US</h2>
+                     <p class="mt-lg-4 company_history_text">
+                        Bluejays Travel and Tours is newly established local tour providers in Cavinti, Laguna. It was founded on August 1, 2017 as start-up travel and tour agency
+                        with add-on travel-related assistance services. And one of affiliates member of Sarap Mag Biyahe (SMB) Travel and Tours.
+                     </p>
 
-               <div class="d-flex flex-column justify-content-center align-items-center gap-3 flex-lg-row flex-lg-wrap w-100 rounded special_offer_all_card">
-                  <!-- /* budget packages */ -->
-                  <div class="card_special_offer_select">
-                     <div class="card_special_offer_container">
-                        <h3 class="card_special_offer_title">Budget Packages</h3>
+                     <p>
+                        Bluejays is a group of friends (barkadahan) name in town of Cavinti were the founder is member. He just borrowed the name and used as his business name. The
+                        founder loves to travel and explore unfamiliar territories.
+                     </p>
 
-                        <div class="card_special_offer_content">
-                           <div class="card_special_offer_inclusions">
-                              <div class="inclusions_text">
-                                 <strong> Inclusions: </strong>
-                              </div>
-                              <ul>
-                                 <li>Transfer</li>
-                                 <li>Hotel</li>
-                                 <li>Day Tours</li>
-                              </ul>
-                           </div>
+                     <p>Appreciated natural wonders of nature as well as the unique delicacies and cultures of every place he visited.</p>
 
-                           <div class="card_special_offer_pros"><strong>Pros:</strong> Enjoy this popular place without spending too much</div>
+                     <p>
+                        These are the reasons why Bluejays Travel and Tours came into Tourism Market to share the uniqueness, amazing features and explore more attractions outside
+                        and inside of the Philippines.
+                     </p>
+                  </div>
 
-                           <div class="card_special_offer_min_nights"><strong>Minimum Nights:</strong> 2 Nights</div>
+                  <div class="w-100 accreditation_logo">
+                     <h2 class="fw-bold text-center py-3">ACCREDITATIONS & MEMBERSHIP</h2>
+                     <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-lg-4 member_logo">
+                        <img src="../images/accreditation/about_dot.jpg" alt="DOT" />
+                        <img src="../images/accreditation/about_iata.jpg" alt="IATA" />
+                        <img src="../images/accreditation/about_ptaa.jpg" alt="PTAA" />
+                        <img src="../images/accreditation/about_aussie.jpg" alt="AUSSIE" />
+                        <img src="../images/accreditation/about_hkspecialist.jpg" alt="HKSPECIALIST" />
+                        <img src="../images/accreditation/about_macauspecialist.jpg" alt="MACUASPECIALIST" />
+                        <img src="../images/accreditation/about_nzspecialist.jpg" alt="NZSPECIALIST" />
+                     </div>
+                  </div>
+               </div>
 
-                           <div class="card_special_offer_hotel_rating">
-                              <strong>Hotel Ratings:</strong>
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                           </div>
+               <div class="d-flex flex-column align-items-center gap-3 gap-lg-5 w-100 p-4 company_services">
+                  <h2 class="fw-bold text-center ourservices">OUR SERVICES</h2>
 
-                           <div class="card_special_offer_offer_price"><strong>Price:</strong> As low as Php 3,000</div>
+                  <div class="d-flex flex-column flex-sm-row flex-sm-wrap justify-content-md-center gap-md-3 gap-lg-6 w-100 offerservices">
+                     <div class="services_items">
+                        <div class="services_items_img ticketing_img">
+                           <img src="../images/services-items/airplane.svg" alt="Plane" />
+                        </div>
 
-                           <div class="card_special_offer_btn_container">
-                              <a href="./contact.html">
-                                 <input
-                                    type="button"
-                                    name="card_special_offer_btn"
-                                    id="card_special_offer_btn"
-                                    class="card_special_offer_btn"
-                                    value="Inquire Now"
-                                    aria-label="Inquire Now Button"
-                                 />
-                              </a>
-                           </div>
+                        <div class="services_title airline_ticketing">
+                           <h3>AIRLINE TICKETING</h3>
+                           <p>We can book your flight to anywhere in the world</p>
+                        </div>
+                     </div>
+
+                     <div class="services_items">
+                        <div class="services_items_img tourpackages_img">
+                           <img src="../images/services-items/briefcase.svg" alt="Briefcase" />
+                        </div>
+
+                        <div class="services_title tourpackages">
+                           <h3>TOUR PACKAGES</h3>
+                           <p>We offer tour packages to anywhere in the world</p>
+                        </div>
+                     </div>
+
+                     <div class="services_items">
+                        <div class="services_items_img hotelbooking_img">
+                           <img src="../images/services-items/bed.png" alt="Bed" />
+                        </div>
+
+                        <div class="services_title hotelbooking">
+                           <h3>HOTEL BOOKING</h3>
+                           <p>We can book your holiday to your favorite hotel</p>
+                        </div>
+                     </div>
+
+                     <div class="services_items">
+                        <div class="services_items_img visapassport_img">
+                           <img src="../images/services-items/file-earmark.svg" alt="Visa" />
+                        </div>
+
+                        <div class="services_title visapassport">
+                           <h3>VISA CONSULTATION</h3>
+                           <p>We will assist you with the visa documentation</p>
                         </div>
                      </div>
                   </div>
+               </div>
 
-                  <!-- /* classic packages */ -->
-                  <div class="card_special_offer_select">
-                     <div class="card_special_offer_container">
-                        <h3 class="card_special_offer_title">Classic Packages</h3>
-
-                        <div class="card_special_offer_content">
-                           <div class="card_special_offer_inclusions">
-                              <div class="inclusions_text">
-                                 <strong> Inclusions: </strong>
-                              </div>
-                              <ul>
-                                 <li>Roundtrip Airfare & Transfer</li>
-                                 <li>Beach Resort</li>
-                                 <li>Private Day Tours</li>
-                              </ul>
-                           </div>
-
-                           <div class="card_special_offer_pros"><strong>Pros:</strong> Great value for money, best attraction included</div>
-
-                           <div class="card_special_offer_min_nights"><strong>Minimum Nights:</strong> 3 Nights</div>
-
-                           <div class="card_special_offer_hotel_rating">
-                              <strong>Hotel Ratings:</strong>
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                           </div>
-
-                           <div class="card_special_offer_offer_price"><strong>Price:</strong> As low as Php 10,000</div>
-
-                           <div class="card_special_offer_btn_container">
-                              <a href="./contact.html">
-                                 <input
-                                    type="button"
-                                    name="card_special_offer_btn"
-                                    id="card_special_offer_btn"
-                                    class="card_special_offer_btn"
-                                    value="Inquire Now"
-                                    aria-label="Inquire Now Button"
-                                 />
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- /* all inclusive packages */ -->
-                  <div class="card_special_offer_select">
-                     <div class="card_special_offer_container">
-                        <h3 class="card_special_offer_title">All Inclusive Packages</h3>
-
-                        <div class="card_special_offer_content">
-                           <div class="card_special_offer_inclusions">
-                              <div class="inclusions_text">
-                                 <strong> Inclusions: </strong>
-                              </div>
-                              <ul>
-                                 <li>Roundtrip Airfare & Transfer</li>
-                                 <li>Luxury Beach Resort</li>
-                                 <li>Private Tours</li>
-                              </ul>
-                           </div>
-
-                           <div class="card_special_offer_pros"><strong>Pros:</strong> Fully customizable package, highest standards maintained</div>
-
-                           <div class="card_special_offer_min_nights"><strong>Minimum Nights:</strong> 3 - 4 Nights</div>
-
-                           <div class="card_special_offer_hotel_rating">
-                              <strong>Hotel Ratings:</strong>
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                              <img src="./images/star.svg" alt="Star" />
-                           </div>
-
-                           <div class="card_special_offer_offer_price"><strong>Price:</strong> As low as Php 25,000</div>
-
-                           <div class="card_special_offer_btn_container">
-                              <a href="./contact.html">
-                                 <input
-                                    type="button"
-                                    name="card_special_offer_btn"
-                                    id="card_special_offer_btn"
-                                    class="card_special_offer_btn"
-                                    value="Inquire Now"
-                                    aria-label="Inquire Now Button"
-                                 />
-                              </a>
-                           </div>
-                        </div>
+               <div class="d-flex flex-column align-items-center w-100 p-4 p-md-5 accept_payment">
+                  <h2 class="fw-bold text-center payment">WE ACCEPT</h2>
+                  <div class="payment_container">
+                     <div class="d-flex justify-content-center gap-2 flex-wrap payment_logo">
+                        <img src="../images/mode-payment/about_jcb.jpg" alt="JCB" />
+                        <img src="../images/mode-payment/about_mastercard.jpg" alt="MASTERCARD" />
+                        <img src="../images/mode-payment/about_paypal.jpg" alt="PAYPAL" />
+                        <img src="../images/mode-payment/about_visa.jpg" alt="VISA" />
                      </div>
                   </div>
                </div>
@@ -234,7 +185,7 @@
                      <!-- /* puerto princesa */ -->
                      <div class="card_suggest puerto_princesa">
                         <div class="card_suggest_image_container">
-                           <img src="./images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_suggest_img puerto_princesa_img" />
+                           <img src="../images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_suggest_img puerto_princesa_img" />
 
                            <div class="card_suggest_price">Php 3,100</div>
 
@@ -249,7 +200,7 @@
                      <!-- /* coron */ -->
                      <div class="card_suggest coron">
                         <div class="card_suggest_image_container">
-                           <img src="./images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_suggest_img coron_img" />
+                           <img src="../images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_suggest_img coron_img" />
 
                            <div class="card_suggest_price">Php 3,200</div>
 
@@ -264,7 +215,7 @@
                      <!-- /* el nido */ -->
                      <div class="card_suggest elnido">
                         <div class="card_suggest_image_container">
-                           <img src="./images/tours/EL-NIDO.jpg" alt="El Nido" class="card_suggest_img elnido_img" />
+                           <img src="../images/tours/EL-NIDO.jpg" alt="El Nido" class="card_suggest_img elnido_img" />
 
                            <div class="card_suggest_price">Php 3,150</div>
 
@@ -279,7 +230,7 @@
                      <!-- /* baguio */ -->
                      <div class="card_suggest baguio">
                         <div class="card_suggest_image_container">
-                           <img src="./images/tours/BAGUIO.jpg" alt="Baguio" class="card_suggest_img baguio_img" />
+                           <img src="../images/tours/BAGUIO.jpg" alt="Baguio" class="card_suggest_img baguio_img" />
 
                            <div class="card_suggest_price">Php 3,600</div>
 
@@ -300,7 +251,7 @@
                <div class="w-100 d-flex flex-column gap-3 contacts_media_container">
                   <div class="d-flex flex-column footer_para_text_container">
                      <div class="footer_logo_container">
-                        <img src="./images/mylogo.png" alt="Footer Logo" class="footer_logo" />
+                        <img src="../images/mylogo.png" alt="Footer Logo" class="footer_logo" />
                      </div>
 
                      <div class="text-white d-flex flex-column flex-md-row gap-3 mt-4">
@@ -371,7 +322,7 @@
 
             <ul class="d-flex justify-content-center align-items-center flex-wrap gap-2 gap-sm-5 list-style-none ps-0 footer_menu_container">
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_home">
-                  <a href="./index.html" class="text-decoration-none text-white"> Home </a>
+                  <a href="../index.html" class="text-decoration-none text-white"> Home </a>
                </li>
                <li class="list-group-item px-2 py-1 rounded footer_menu_item" id="footer_special_offer">
                   <a href="./special-offers.html" class="text-decoration-none text-white"> Offers </a>
