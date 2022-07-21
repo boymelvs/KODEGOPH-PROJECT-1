@@ -8,7 +8,7 @@
 
       <link rel="icon" type="image/png" sizes="32x32" href="../images/faviconlogo.png" />
       <link rel="stylesheet" href="../styles/header-footer.css" />
-      <link rel="stylesheet" href="../styles/about.css" />
+      <link rel="stylesheet" href="../styles/tours.css" />
       <link rel="stylesheet" href="../styles/youlike.css" />
 
       <!-- CSS only -->
@@ -21,9 +21,10 @@
          crossorigin="anonymous"
       />
    </head>
+
    <body class="bg-light">
-      <div id="about" class="d-flex flex-column align-items-center w-100 about_container">
-         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_about_bg">
+      <div id="home" class="d-flex flex-column align-items-center w-100">
+         <header class="d-flex flex-column justify-content-end w-100 pb-2 pb-lg-5 header_tours_bg">
             <nav class="d-flex justify-content-between align-items-center position-fixed top-0 w-100 nav_bar_bg">
                <input type="checkbox" name="burger_checkbox" id="burger_checkbox" class="d-none" aria-label="burger checkbox" />
 
@@ -76,169 +77,237 @@
             </nav>
          </header>
 
-         <main class="d-flex flex-column gap-5 w-100 px-2 main_about">
-            <section class="d-flex flex-column gap-3 w-100 about_company">
-               <div class="d-flex flex-column flex-md-row gap-1 px-2 px-md-3 py-md-4 py-lg-5 my_company">
-                  <div class="w-100 history">
-                     <h2 class="fw-bold text-center py-3">ABOUT US</h2>
-                     <p class="mt-lg-4 company_history_text">
-                        Bluejays Travel and Tours is newly established local tour providers in Cavinti, Laguna. It was founded on August 1, 2017 as start-up travel and tour agency
-                        with add-on travel-related assistance services. And one of affiliates member of Sarap Mag Biyahe (SMB) Travel and Tours.
-                     </p>
-
-                     <p>
-                        Bluejays is a group of friends (barkadahan) name in town of Cavinti were the founder is member. He just borrowed the name and used as his business name. The
-                        founder loves to travel and explore unfamiliar territories.
-                     </p>
-
-                     <p>Appreciated natural wonders of nature as well as the unique delicacies and cultures of every place he visited.</p>
-
-                     <p>
-                        These are the reasons why Bluejays Travel and Tours came into Tourism Market to share the uniqueness, amazing features and explore more attractions outside
-                        and inside of the Philippines.
-                     </p>
+         <main class="d-flex flex-column gap-5 w-100 px-2 main_tours">
+            <!-- /* tour packages */ -->
+            <section id="tours" class="px-2 mb-5 packages_container">
+               <div class="local_destinations">
+                  <div class="tour_title">
+                     <h2 class="text-center fw-bold destination_text_title">LOCAL DESTINATIONS</h2>
+                     <p class="text-center fw-semibold destinations_para_text">Travel all over the Philippines</p>
                   </div>
 
-                  <div class="w-100 accreditation_logo">
-                     <h2 class="fw-bold text-center py-3">ACCREDITATIONS & MEMBERSHIP</h2>
-                     <div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-lg-4 member_logo">
-                        <img src="../images/accreditation/about_dot.jpg" alt="DOT" />
-                        <img src="../images/accreditation/about_iata.jpg" alt="IATA" />
-                        <img src="../images/accreditation/about_ptaa.jpg" alt="PTAA" />
-                        <img src="../images/accreditation/about_aussie.jpg" alt="AUSSIE" />
-                        <img src="../images/accreditation/about_hkspecialist.jpg" alt="HKSPECIALIST" />
-                        <img src="../images/accreditation/about_macauspecialist.jpg" alt="MACUASPECIALIST" />
-                        <img src="../images/accreditation/about_nzspecialist.jpg" alt="NZSPECIALIST" />
-                     </div>
-                  </div>
-               </div>
+                  <div class="card_container">
+                     <!-- /* boracay */ -->
+                     <div class="card boracay">
+                        <div class="card_image_container">
+                           <img src="../images/tours/boracay.jpg" alt="Boracay" class="card_img boracay_img" />
 
-               <div class="d-flex flex-column align-items-center gap-3 gap-lg-5 w-100 p-4 company_services">
-                  <h2 class="fw-bold text-center ourservices">OUR SERVICES</h2>
-
-                  <div class="d-flex flex-column flex-sm-row flex-sm-wrap justify-content-md-center gap-md-3 gap-lg-6 w-100 offerservices">
-                     <div class="services_items">
-                        <div class="services_items_img ticketing_img">
-                           <img src="../images/services-items/airplane.svg" alt="Plane" />
+                           <div class="card_price">Php 3,750</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
                         </div>
 
-                        <div class="services_title airline_ticketing">
-                           <h3>AIRLINE TICKETING</h3>
-                           <p>We can book your flight to anywhere in the world</p>
+                        <div class="card_description">
+                           <h2 class="card_title">BORACAY</h2>
                         </div>
                      </div>
 
-                     <div class="services_items">
-                        <div class="services_items_img tourpackages_img">
-                           <img src="../images/services-items/briefcase.svg" alt="Briefcase" />
-                        </div>
-
-                        <div class="services_title tourpackages">
-                           <h3>TOUR PACKAGES</h3>
-                           <p>We offer tour packages to anywhere in the world</p>
-                        </div>
-                     </div>
-
-                     <div class="services_items">
-                        <div class="services_items_img hotelbooking_img">
-                           <img src="../images/services-items/bed.png" alt="Bed" />
-                        </div>
-
-                        <div class="services_title hotelbooking">
-                           <h3>HOTEL BOOKING</h3>
-                           <p>We can book your holiday to your favorite hotel</p>
-                        </div>
-                     </div>
-
-                     <div class="services_items">
-                        <div class="services_items_img visapassport_img">
-                           <img src="../images/services-items/file-earmark.svg" alt="Visa" />
-                        </div>
-
-                        <div class="services_title visapassport">
-                           <h3>VISA CONSULTATION</h3>
-                           <p>We will assist you with the visa documentation</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="d-flex flex-column align-items-center w-100 p-4 p-md-5 accept_payment">
-                  <h2 class="fw-bold text-center payment">WE ACCEPT</h2>
-                  <div class="payment_container">
-                     <div class="d-flex justify-content-center gap-2 flex-wrap payment_logo">
-                        <img src="../images/mode-payment/about_jcb.jpg" alt="JCB" />
-                        <img src="../images/mode-payment/about_mastercard.jpg" alt="MASTERCARD" />
-                        <img src="../images/mode-payment/about_paypal.jpg" alt="PAYPAL" />
-                        <img src="../images/mode-payment/about_visa.jpg" alt="VISA" />
-                     </div>
-                  </div>
-               </div>
-            </section>
-
-            <!-- /* you may also like */ -->
-            <section class="d-flex flex-column w-100 mb-5 tour_suggestions">
-               <div class="d-flex flex-column tour_suggestions_container">
-                  <h2 class="fw-bold tour_suggestions_title">YOU MAY ALSO LIKE</h2>
-
-                  <div class="card_suggest_container">
                      <!-- /* puerto princesa */ -->
-                     <div class="card_suggest puerto_princesa">
-                        <div class="card_suggest_image_container">
-                           <img src="../images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_suggest_img puerto_princesa_img" />
+                     <div class="card puerto_princesa">
+                        <div class="card_image_container">
+                           <img src="../images/tours/puerto-princesa.jpg" alt="Puerto Princesa" class="card_img puerto_princesa_img" />
 
-                           <div class="card_suggest_price">Php 3,100</div>
-
-                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                           <div class="card_price">Php 3,100</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
                         </div>
 
-                        <div class="card_suggest_description">
-                           <h2 class="card_suggest_title">PUERTO PRINCESA</h2>
+                        <div class="card_description">
+                           <h2 class="card_title">PUERTO PRINCESA</h2>
                         </div>
                      </div>
 
                      <!-- /* coron */ -->
-                     <div class="card_suggest coron">
-                        <div class="card_suggest_image_container">
-                           <img src="../images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_suggest_img coron_img" />
+                     <div class="card coron">
+                        <div class="card_image_container">
+                           <img src="../images/tours/lagunas-gemelas-coron-filipinas.jpg" alt="Coron" class="card_img coron_img" />
 
-                           <div class="card_suggest_price">Php 3,200</div>
-
-                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                           <div class="card_price">Php 3,200</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
                         </div>
 
-                        <div class="card_suggest_description">
-                           <h2 class="card_suggest_title">CORON</h2>
+                        <div class="card_description">
+                           <h2 class="card_title">CORON</h2>
                         </div>
                      </div>
 
                      <!-- /* el nido */ -->
-                     <div class="card_suggest elnido">
-                        <div class="card_suggest_image_container">
-                           <img src="../images/tours/EL-NIDO.jpg" alt="El Nido" class="card_suggest_img elnido_img" />
+                     <div class="card elnido">
+                        <div class="card_image_container">
+                           <img src="../images/tours/EL-NIDO.jpg" alt="El Nido" class="card_img elnido_img" />
 
-                           <div class="card_suggest_price">Php 3,150</div>
-
-                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                           <div class="card_price">Php 3,150</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
                         </div>
 
-                        <div class="card_suggest_description">
-                           <h2 class="card_suggest_title">EL NIDO</h2>
+                        <div class="card_description">
+                           <h2 class="card_title">EL NIDO</h2>
                         </div>
                      </div>
 
                      <!-- /* baguio */ -->
-                     <div class="card_suggest baguio">
-                        <div class="card_suggest_image_container">
-                           <img src="../images/tours/BAGUIO.jpg" alt="Baguio" class="card_suggest_img baguio_img" />
+                     <div class="card baguio">
+                        <div class="card_image_container">
+                           <img src="../images/tours/BAGUIO.jpg" alt="Baguio" class="card_img baguio_img" />
 
-                           <div class="card_suggest_price">Php 3,600</div>
-
-                           <a href="./destination.html" class="card_suggest_read_more_btn"> Read More </a>
+                           <div class="card_price">Php 3,600</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
                         </div>
 
-                        <div class="card_suggest_description">
-                           <h2 class="card_suggest_title">BAGUIO</h2>
+                        <div class="card_description">
+                           <h2 class="card_title">BAGUIO</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* batanes */ -->
+                     <div class="card batanes">
+                        <div class="card_image_container">
+                           <img src="../images/tours/BATANES.jpg" alt="Batanes" class="card_img batanes_img" />
+
+                           <div class="card_price">Php 3,200</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BATANES</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* bohol */ -->
+                     <div class="card bohol">
+                        <div class="card_image_container">
+                           <img src="../images/tours/BOHOL.jpg" alt="Bohol" class="card_img bohol_img" />
+
+                           <div class="card_price">Php 3,300</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">BOHOL</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* cebu */ -->
+                     <div class="card cebu">
+                        <div class="card_image_container">
+                           <img src="../images/tours/CEBU.jpg" alt="Cebu" class="card_img cebu_img" />
+
+                           <div class="card_price">Php 4,100</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">CEBU</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* davao */ -->
+                     <div class="card davao">
+                        <div class="card_image_container">
+                           <img src="../images/tours/Davao.jpg" alt="Davao" class="card_img davao_img" />
+
+                           <div class="card_price">Php 2,3500</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">DAVAO</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* ilocos norte */ -->
+                     <div class="card ilocos_norte">
+                        <div class="card_image_container">
+                           <img src="../images/tours/ilocos-norte.png" alt="Ilocos Norte" class="card_img ilocos_norte_img" />
+
+                           <div class="card_price">Php 3,450</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">ILOCOS NORTE</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* pangasinan */ -->
+                     <div class="card pangasinan">
+                        <div class="card_image_container">
+                           <img src="../images/tours/hundred-island.jpg" alt="Pangasinan" class="card_img pangasinan_img" />
+
+                           <div class="card_price">Php 2,100</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">PANGASINAN</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* caramoan */ -->
+                     <div class="card caramoan">
+                        <div class="card_image_container">
+                           <img src="../images/tours/caramoan.jpg" alt="Pangasinan" class="card_img caramoan_img" />
+
+                           <div class="card_price">Php 2,200</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">CARAMOAN</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* sagada */ -->
+                     <div class="card sagada">
+                        <div class="card_image_container">
+                           <img src="../images/tours/caramoan.jpg" alt="Sagada" class="card_img sagada_img" />
+
+                           <div class="card_price">Php 2,250</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">SAGADA</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* legazpi */ -->
+                     <div class="card legazpi">
+                        <div class="card_image_container">
+                           <img src="../images/tours/legazpi.jpg" alt="Legazpi" class="card_img legazpi_img" />
+
+                           <div class="card_price">Php 2,550</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">LEGAZPI</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* launion */ -->
+                     <div class="card launion">
+                        <div class="card_image_container">
+                           <img src="../images/tours/launion.jpg" alt="La Union" class="card_img launion_img" />
+
+                           <div class="card_price">Php 2,250</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">LA UNION</h2>
+                        </div>
+                     </div>
+
+                     <!-- /* surigao */ -->
+                     <div class="card surigao">
+                        <div class="card_image_container">
+                           <img src="../images/tours/surigao.jpg" alt="Surigao" class="card_img surigao_img" />
+
+                           <div class="card_price">Php 3,250</div>
+                           <a href="./destination.html" class="read_more_btn"> Read More </a>
+                        </div>
+
+                        <div class="card_description">
+                           <h2 class="card_title">SURIGAO</h2>
                         </div>
                      </div>
                   </div>
