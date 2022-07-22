@@ -159,6 +159,18 @@ html {
       padding-right: 20px;
    }
 
+   #search_checkbox:checked ~ .burger_search_container > form .search {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      top: 17.5px;
+      right: 60px;
+      transition: all 300ms ease-in-out;
+      width: 25%;
+      background: white;
+      z-index: 91;
+   }
+
    .menu_container {
       display: block;
       transition: all 00ms ease;
