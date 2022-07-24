@@ -75,6 +75,16 @@
    border: 1px solid black;
 }
 
+@media (max-width: 340px) {
+   .services_items_img img {
+      width: 20px;
+   }
+
+   .payment_logo img {
+      width: 100%;
+   }
+}
+
 @media (min-width: 768px) {
    .main_about {
       margin-top: 40px;

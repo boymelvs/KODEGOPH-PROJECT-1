@@ -212,29 +212,24 @@ footer {
 
 .social_media_container .icon {
    font-size: 35px;
-   transition: all 300ms ease;
+   color: white;
+   cursor: pointer;
 }
 
-.social_media_container .facebook {
+.social_media_container .facebook:hover {
    color: hsl(208, 92%, 53%);
 }
 
-.social_media_container .twitter {
+.social_media_container .twitter:hover {
    color: hsl(203, 89%, 53%);
 }
 
-.social_media_container .instagram {
+.social_media_container .instagram:hover {
    color: hsl(329, 70%, 58%);
 }
 
-.social_media_container .youtube {
+.social_media_container .youtube:hover {
    color: hsl(348, 97%, 39%);
-}
-
-.social_media_container .icon:hover {
-   transform: scale(1.1);
-   cursor: pointer;
-   color: white;
 }
 
 .footer_logo_container {
