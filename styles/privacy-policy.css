@@ -1,0 +1,32 @@
+.header_privacy_bg {
+   max-width: 1440px;
+}
+
+.main_privacy {
+   max-width: 1440px;
+   margin-top: 65px;
+}
+
+#footer_privacy {
+   background: hsl(36, 71%, 53%);
+}
+
+#footer_privacy a {
+   color: white;
+}
+
+.privacy_policy p {
+   text-align: justify;
+}
+
+.privacy_policy a {
+   text-decoration: none;
+   color: hsl(36, 71%, 53%);
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.site {
+   color: hsl(36, 71%, 53%);
+   font-weight: 600;
+}

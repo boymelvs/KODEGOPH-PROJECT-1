@@ -1,0 +1,32 @@
+.header_terms_conditions_bg {
+   max-width: 1440px;
+}
+
+.main_terms_conditions {
+   max-width: 1440px;
+   margin-top: 65px;
+}
+
+#footer_terms_conditions {
+   background: hsl(36, 71%, 53%);
+}
+
+#footer_terms_conditions a {
+   color: white;
+}
+
+.terms_conditions p {
+   text-align: justify;
+}
+
+.terms_conditions a {
+   text-decoration: none;
+   color: hsl(36, 71%, 53%);
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.site {
+   color: hsl(36, 71%, 53%);
+   font-weight: 600;
+}
