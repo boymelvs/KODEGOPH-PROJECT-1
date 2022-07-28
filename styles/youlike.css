@@ -68,13 +68,17 @@
 }
 
 .card_suggest_description {
-   text-align: center;
-   color: white;
-   border-radius: 0 0 5px 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    background: hsl(0, 0%, 24%);
+   border-radius: 0 0 5px 5px;
+   width: 100%;
 }
 
 .card_suggest_title {
+   margin-top: 7px;
+   color: white;
    font-weight: 700;
 }
 
