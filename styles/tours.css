@@ -33,7 +33,6 @@
    flex-direction: column;
    width: 100%;
    border-radius: 5px;
-   background: white;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -95,15 +94,14 @@
 }
 
 .card_description {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   padding: 10px;
+   text-align: center;
+   color: white;
+   border-radius: 0 0 5px 5px;
+   background: hsl(0, 0%, 24%);
 }
 
 .card_title {
-   font-weight: bold;
+   font-weight: 700;
 }
 
 @media (min-width: 670px) {
@@ -118,6 +116,12 @@
 
    .card {
       width: 320px;
+   }
+}
+
+@media (min-width: 992px) {
+   .main_tours {
+      margin-top: 20px;
    }
 }
 

@@ -7,7 +7,7 @@ html {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top 0 left 0;
-   min-height: 50vh;
+   height: 350px;
    max-width: 1440px;
 }
 
@@ -135,28 +135,35 @@ html {
 
 .header_text {
    width: 75%;
-   font-size: 16px;
+   font-size: 18px !important;
 }
 
 @media (min-width: 576px) {
-   .header_bg {
-      min-height: 60vh;
-   }
-
    .header_text {
       width: 60%;
-      font-size: 18px;
+      font-size: 24px !important;
    }
 }
 
 @media (min-width: 768px) {
    .header_bg {
-      min-height: 70vh;
+      height: 400px;
    }
 
    .burger_search_container {
       position: unset;
       padding-right: 20px;
+   }
+
+   @media (min-width: 992px) {
+      .header_bg {
+         height: 500px;
+      }
+
+      .header_text {
+         width: 75%;
+         font-size: 35px !important;
+      }
    }
 
    #search_checkbox:checked ~ .burger_search_container > form .search {

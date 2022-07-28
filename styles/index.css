@@ -131,15 +131,14 @@
 }
 
 .card_description {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   padding: 10px;
+   text-align: center;
+   color: white;
+   border-radius: 0 0 5px 5px;
+   background: hsl(0, 0%, 24%);
 }
 
 .card_title {
-   font-weight: bold;
+   font-weight: 700;
 }
 
 @media (min-width: 670px) {

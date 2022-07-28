@@ -13,11 +13,17 @@
 
 .main_special_offer {
    max-width: 1440px;
-   margin-top: 60px;
+   margin-top: 50px;
+}
+
+.special_offer_title,
+.special_offer_all_card {
+   z-index: 10;
 }
 
 .card_special_offer_select {
    transition: all 500ms ease-in-out;
+   z-index: 10;
 }
 
 .card_special_offer_container {
@@ -25,6 +31,7 @@
    flex-direction: column;
    border-radius: 10px;
    border: 1px solid hsl(36, 71%, 53%);
+   background: whitesmoke;
    width: 100%;
 }
 
@@ -101,8 +108,34 @@
 
 @media (min-width: 450px) {
    .special_offer_content_container {
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      padding: 30px 0;
+      padding: 20px 0;
+   }
+
+   .special_offer_title {
+      color: white;
+   }
+
+   .special_offer_content_container {
+      background-image: url("../images/tours/Japan_CherryBlossoms.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px;
+      padding: 15px 0;
+      position: relative;
+      z-index: 1;
+   }
+
+   .special_offer_content_container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
    }
 
    .card_special_offer_container {
@@ -112,7 +145,7 @@
 
 @media (min-width: 768px) {
    .main_special_offer {
-      margin-top: 15px;
+      margin-top: 45px;
    }
 
    .card_special_offer_container {
@@ -121,8 +154,12 @@
 }
 
 @media (min-width: 992px) {
+   .main_special_offer {
+      margin-top: 10px;
+   }
+
    .card_special_offer_select:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       cursor: pointer;
    }
 }
